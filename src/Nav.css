@@ -1,0 +1,25 @@
+nav {
+  width: 100%;
+  height: 160px;
+  background: url('./img/landing-cover.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+header h3 {
+  margin: 0;
+}
+
+#nav-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
