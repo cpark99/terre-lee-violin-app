@@ -1,0 +1,42 @@
+input,
+textarea {
+  width: 80vw;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #fafafa;
+  padding: 12px;
+}
+
+input {
+  height: 37px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+form button {
+  margin: 10px 0;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.privacy-notice {
+  font-size: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

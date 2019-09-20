@@ -1,0 +1,37 @@
+footer,
+#pre-footer {
+  width: 100%;
+}
+
+footer {
+  background: rgb(37, 37, 37);
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+}
+
+footer a:link,
+footer a:visited {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-weight: initial;
+  font-size: 13px;
+}
+
+footer a:hover {
+  color: #70e2d9;
+}
+
+#pre-footer {
+  height: 40px;
+  background: rgb(61, 61, 61);
+}
+
+.italic {
+  font-style: italic;
+}

@@ -1,0 +1,23 @@
+#contact-section h1 {
+  margin-top: 20px;
+}
+
+#contact {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.email-icon {
+  width: 25px;
+}
+
+.flex-center-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

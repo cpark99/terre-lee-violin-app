@@ -1,0 +1,54 @@
+import React, { Component } from 'react';
+import ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
+import phone from './img/phone-navy.png';
+import email from './img/email.png';
+import linkedin from './img/linkedin.png';
+import facebook from './img/facebook.png';
+import './Contact.css';
+
+export default class Contact extends Component {
+  render() {
+    return (
+      <section id="contact" className="container">
+        <ScrollToTopOnMount />
+        <h1 className="page-title">CONTACT</h1>
+        <div id="contact-info">
+          <p>
+            <a href="tel:+1-831-295-0911" className="flex-center-center">
+              <img src={phone} className="phone-icon contact-icon" alt="navy telephone icon" />
+              831.295.0911
+            </a>
+          </p>
+          <p>
+            <a href="mailto:tleeviolin@gmail.com" className="flex-center-center">
+              <img src={email} className="email-icon contact-icon" alt="navy envelope icon" />
+              tleeviolin@gmail.com
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/"
+              className="flex-center-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedin} className="linkedin-icon contact-icon" alt="navy linkedin icon" />
+              LinkedIn
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.facebook.com/"
+              className="flex-center-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={facebook} className="facebook-icon contact-icon" alt="navy facebook icon" />
+              Facebook
+            </a>
+          </p>
+        </div>
+      </section>
+    );
+  }
+}

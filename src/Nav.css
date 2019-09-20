@@ -1,25 +1,68 @@
 nav {
   width: 100%;
-  height: 160px;
-  background: url('./img/landing-cover.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 59px;
+  background: rgb(37, 37, 37);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0 15px 0 20px;
   color: white;
+  height: 100%;
 }
 
 header h3 {
   margin: 0;
+  font-size: 16px;
+}
+
+header a:link,
+header a:visited {
+  color: white;
+}
+
+header a:hover,
+#hamburger:hover {
+  color: #70e2d9;
+  cursor: pointer;
 }
 
 #nav-container {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+#hamburger {
+  font-size: 38px;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  background: url('./img/landing-cover.png');
+}
+
+.what-we-do-nav {
+  background: url('./img/IMG_2566.jpg');
+}
+
+.lessons-nav {
+  background: url('./img/EB2019-SpringRecital-9027.jpg');
+}
+
+.new-students-nav {
+  background: url('./img/EB2019-SpringRecital-8881.jpg');
+}
+
+.nav-image {
+  height: 160px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  position: relative;
+  bottom: 50px;
 }

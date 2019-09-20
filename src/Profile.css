@@ -1,0 +1,20 @@
+#profile h4 {
+  margin-right: 15px;
+}
+
+#to-reschedule-button {
+  margin-top: 30px;
+}
+
+#reschedule-section {
+  margin-top: 10px;
+}
+
+.profile-info-container {
+  display: flex;
+}
+
+.question-text {
+  font-size: 15px;
+  margin-top: 0;
+}
