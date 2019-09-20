@@ -30,8 +30,8 @@ export default function Application(props) {
       <ScrollToTopOnMount />
       <h1 className="page-title">APPLY NOW</h1>
       <form id="application-form" className="flex-column-center">
-        <div class="form-field">
-          <label for="name">Full Name:</label>
+        <div className="form-field">
+          <label htmlFor="name">Full Name:</label>
           <input
             type="text"
             name="name"
@@ -42,8 +42,8 @@ export default function Application(props) {
             onChange={handleNameChange}
           />
         </div>
-        <div class="form-field">
-          <label for="email">Email:</label>
+        <div className="form-field">
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
             name="email"
@@ -54,8 +54,8 @@ export default function Application(props) {
             onChange={handleEmailChange}
           />
         </div>
-        <div class="form-field">
-          <label for="phone">Phone:</label>
+        <div className="form-field">
+          <label htmlFor="phone">Phone:</label>
           <input
             type="tel"
             name="phone"
@@ -66,8 +66,8 @@ export default function Application(props) {
             onChange={handlePhoneChange}
           />
         </div>
-        <div class="form-field">
-          <label for="text">Message:</label>
+        <div className="form-field">
+          <label htmlFor="text">Message:</label>
           <textarea
             type="text"
             name="text"
@@ -81,7 +81,7 @@ export default function Application(props) {
       <p>
         <span className="italic">Already a student?</span> <NavLink to="/login">Login</NavLink>
       </p>
-      <p class="personal-information-notice privacy-notice">
+      <p className="personal-information-notice privacy-notice">
         <span className="italic">*Personal information will NOT be shared with third-parties.</span>
       </p>
     </section>

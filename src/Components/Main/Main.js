@@ -25,26 +25,27 @@ export default class Main extends Component {
           <NavLink to="/apply">
             <button>Apply Now</button>
           </NavLink>
+
+          <div id="teaching-studio" className="main-sub-section flex-column-center-center">
+            <img
+              className="main-image"
+              src={springOne}
+              alt="spring recital students, black and white"
+            />
+            <h2>TEACHING STUDIO</h2>
+            <p>Find out about the Suzuki Method, studio policies, and more.</p>
+            <NavLink to="/what-we-do">Learn More →</NavLink>
+          </div>
+          <div id="bookings" className="main-sub-section flex-column-center-center">
+            <img className="main-image" src={springTwo} alt="violin with piano in background" />
+            <h2>BOOKINGS</h2>
+            <p>
+              Terre's projects, private events- weddings, memorials, private parties, recordings,
+              and more...
+            </p>
+            <NavLink to="/private-events">Find Out How →</NavLink>
+          </div>
         </section>
-        <div id="teaching-studio" className="main-sub-section flex-column-center-center">
-          <img
-            className="main-image"
-            src={springOne}
-            alt="spring recital students, black and white"
-          />
-          <h2>TEACHING STUDIO</h2>
-          <p>Find out about the Suzuki Method, studio policies, and more.</p>
-          <NavLink to="/what-we-do">Learn More →</NavLink>
-        </div>
-        <div id="bookings" className="main-sub-section flex-column-center-center">
-          <img className="main-image" src={springTwo} alt="violin with piano in background" />
-          <h2>BOOKINGS</h2>
-          <p>
-            Terre's projects, private events- weddings, memorials, private parties, recordings, and
-            more...
-          </p>
-          <NavLink to="/private-events">Find Out How →</NavLink>
-        </div>
       </div>
     );
   }
