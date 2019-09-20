@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
+import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import './SuzukiMethod.css';
 
 export default class SuzukiMethod extends Component {

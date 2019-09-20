@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
-import studentOne from './img/IMG_E2975.jpg';
-import studentTwo from './img/EB2019-SpringRecital-8775.jpg';
-import studentThree from './img/EB2019-SpringRecital-8716.jpg';
+import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
+import studentOne from '../../img/IMG_E2975.jpg';
+import studentTwo from '../../img/EB2019-SpringRecital-8775.jpg';
+import studentThree from '../../img/EB2019-SpringRecital-8716.jpg';
 import './WhatWeDo.css';
 
 export default class PrivateEvents extends Component {

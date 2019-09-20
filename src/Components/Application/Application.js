@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
+import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import './Application.css';
 
 export default function Application(props) {
@@ -79,7 +79,7 @@ export default function Application(props) {
         <button id="sign-up-form-button">Submit</button>
       </form>
       <p>
-        Already a student? <NavLink to="/login">Login</NavLink>
+        <span className="italic">Already a student?</span> <NavLink to="/login">Login</NavLink>
       </p>
       <p class="personal-information-notice privacy-notice">
         <span className="italic">*Personal information will NOT be shared with third-parties.</span>

@@ -1,18 +1,18 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Nav from './Nav';
-import Main from './Main';
+import Nav from '../Nav/Nav';
+import Main from '../Main/Main';
 import './App.css';
-import Footer from './Footer';
-import PrivateEvents from './PrivateEvents';
-import WhatWeDo from './WhatWeDo';
-import Lessons from './Lessons';
-import NewStudents from './NewStudents';
-import SuzukiMethod from './SuzukiMethod';
-import Contact from './Contact';
-import Application from './Application';
-import Login from './Login';
-import Profile from './Profile';
+import Footer from '../Footer/Footer';
+import PrivateEvents from '../PrivateEvents/PrivateEvents';
+import WhatWeDo from '../WhatWeDo/WhatWeDo';
+import Lessons from '../Lessons/Lessons';
+import NewStudents from '../NewStudents/NewStudents';
+import SuzukiMethod from '../SuzukiMethod/SuzukiMethod';
+import Contact from '../Contact/Contact';
+import Application from '../Application/Application';
+import Login from '../Login/Login';
+import Profile from '../Profile/Profile';
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Profile.css';
-import ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
+import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 
 export default function Profile() {
   return (

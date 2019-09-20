@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
-import phone from './img/phone-navy.png';
-import email from './img/email.png';
-import linkedin from './img/linkedin.png';
-import facebook from './img/facebook.png';
+import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
+import phone from '../../img/phone-navy.png';
+import email from '../../img/email.png';
+import linkedin from '../../img/linkedin.png';
+import facebook from '../../img/facebook.png';
 import './Contact.css';
 
 export default class Contact extends Component {

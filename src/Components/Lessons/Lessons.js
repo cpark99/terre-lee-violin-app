@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
-import lessonTwo from './img/EB2019-SpringRecital-8700.jpg';
+import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
+import lessonTwo from '../../img/EB2019-SpringRecital-8700.jpg';
 import './Lessons.css';
 
 export default class Lessons extends Component {

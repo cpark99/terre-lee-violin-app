@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ScrollToTopOnMount from './ScrollToTopOnMount/ScrollToTopOnMount';
-import weddingViolinist from './img/Wedding+VIolinist.jpg';
+import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
+import weddingViolinist from '../../img/Wedding+VIolinist.jpg';
 import './PrivateEvents.css';
 
 export default class PrivateEvents extends Component {
