@@ -1,0 +1,85 @@
+h5 {
+  font-size: 13px;
+}
+
+#sidebar-nav-menu {
+  color: rgba(255, 255, 255, 0.9);
+  align-items: flex-start;
+  padding: 24px 36px 72px;
+}
+
+#sidebar-nav-menu h5 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+#sidebar-nav-menu h5:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#sidebar-nav-menu a:link,
+#sidebar-nav-menu a:visited {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#sidebar-nav-menu a:hover {
+  color: white;
+}
+
+#nav-menu-contact-button,
+#nav-menu-apply-button {
+  border-radius: 300px;
+  height: 43px;
+  width: 116px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  background: none;
+}
+
+#nav-menu-contact-button {
+  border: 2px solid white;
+}
+
+#nav-menu-contact-button:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+#nav-menu-apply-button {
+  border: 2px solid #3d9991;
+}
+
+#nav-menu-contact-button:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+#nav-menu-contact-button h5 {
+  margin: 10px 0;
+}
+
+#sidebar-nav-menu button h5:hover {
+  color: black;
+}
+
+#nav-menu-apply-button:hover {
+  background: #3d9991;
+  color: black;
+}
+
+.nav-menu-dropdown-list {
+  list-style: none;
+  padding: 0 0 0 12px;
+  margin: 0;
+}
+
+.bookings-item {
+  margin-bottom: 26px;
+}
+
+.studio-item {
+  margin-bottom: 20px;
+}

@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Profile.css';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 
 export default function Profile() {
+  useEffect(() => {
+    document.title = '(name) | Profile';
+  });
+
   return (
     <section id="profile" className="container">
       <ScrollToTopOnMount />

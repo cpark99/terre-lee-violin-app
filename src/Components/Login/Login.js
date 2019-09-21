@@ -15,6 +15,10 @@ export default class Login extends Component {
 
   // static contextType = UserContext;
 
+  componentDidMount() {
+    document.title = 'Student Login | Terre Lee';
+  }
+
   // handleLoginSuccess = payload => {
   //   const { location, history } = this.props;
   //   const destination = (location.state || {}).from || '/profile';

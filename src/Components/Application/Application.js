@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import './Application.css';
@@ -8,6 +8,10 @@ export default function Application(props) {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    document.title = 'Apply | Terre Lee';
+  });
 
   function handleNameChange(e) {
     setName(e.target.value);

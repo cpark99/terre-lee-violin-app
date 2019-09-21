@@ -1,6 +1,43 @@
+#sidebar-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  line-height: 1em;
+  text-align: left;
+  overflow: auto;
+  background-color: #212121;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  transition: height 0s 0.14s linear, visibility 0s 0s linear;
+}
+
 .flex-column-center-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.visible-side-nav {
+  visibility: visible;
+  width: 260px;
+}
+
+.hidden-side-nav {
+  visibility: hidden;
+  width: 0;
+}
+
+.whole-main-body {
+  transform: translate3d(0, 0, 0);
+}
+
+.partial-main-body {
+  transform: translate3d(-260px, 0, 0);
+}
+
+.partial-main-body:hover {
+  cursor: e-resize;
 }
