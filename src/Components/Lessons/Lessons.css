@@ -4,9 +4,15 @@
 }
 
 #lesson-one-image {
-  height: 220px;
+  height: 44vh;
   background: url('../../img/Screen+Shot+2019-09-02+at+4.12.26+PM.png');
   background-position: center;
   background-size: cover;
   margin: 20px 0;
+}
+
+@media (max-width: 666px) {
+  #lesson-one-image {
+    height: 400px;
+  }
 }

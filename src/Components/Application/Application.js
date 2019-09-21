@@ -35,7 +35,7 @@ export default function Application(props) {
       <h1 className="page-title">APPLY NOW</h1>
       <form id="application-form" className="flex-column-center">
         <div className="form-field">
-          <label htmlFor="name">Full Name:</label>
+          <label htmlFor="name">Full Name *</label>
           <input
             type="text"
             name="name"
@@ -47,7 +47,7 @@ export default function Application(props) {
           />
         </div>
         <div className="form-field">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email *</label>
           <input
             type="email"
             name="email"
@@ -59,7 +59,7 @@ export default function Application(props) {
           />
         </div>
         <div className="form-field">
-          <label htmlFor="phone">Phone:</label>
+          <label htmlFor="phone">Phone *</label>
           <input
             type="tel"
             name="phone"
@@ -71,19 +71,19 @@ export default function Application(props) {
           />
         </div>
         <div className="form-field">
-          <label htmlFor="text">Message:</label>
+          <label htmlFor="message">Message</label>
           <textarea
             type="text"
-            name="text"
-            id="text"
+            name="message"
+            id="message"
             value={message}
             onChange={handleMessageChange}
           />
         </div>
-        <button id="sign-up-form-button">Submit</button>
+        <button id="application-form-button">SUBMIT</button>
       </form>
       <p>
-        <span className="italic">Already a student?</span> <NavLink to="/login">Login</NavLink>
+        Already a student? <NavLink to="/login">Login</NavLink>
       </p>
       <p className="personal-information-notice privacy-notice">
         <span className="italic">*Personal information will NOT be shared with third-parties.</span>

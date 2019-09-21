@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import weddingViolinist from '../../img/Wedding+VIolinist.jpg';
 import './PrivateEvents.css';
@@ -13,7 +14,7 @@ export default function PrivateEvents() {
       <ScrollToTopOnMount />
       <h1 className="page-title">PRIVATE EVENTS</h1>
       <img
-        className="main-image"
+        className="fixed-image"
         src={weddingViolinist}
         alt="Terre Lee playing violin at a wedding, wedding couple dancing in background"
       />
@@ -28,7 +29,10 @@ export default function PrivateEvents() {
         nothing more ceremonious or celebratory than a unique live performance, customized to your
         preferences.
       </p>
-      <p>Book Terre and friends for your wedding, memorial service, or party.</p>
+      <p>
+        <NavLink to="/contact">Book</NavLink> Terre and friends for your wedding, memorial service,
+        or party.
+      </p>
     </section>
   );
 }

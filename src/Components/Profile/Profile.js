@@ -36,7 +36,7 @@ export default function Profile() {
       </div>
       <p className="question-text">
         <span className="italic">Questions or concerns?</span>{' '}
-        <NavLink to="/contact">Contact me</NavLink>
+        <NavLink to="/contact">&nbsp;Contact me</NavLink>
       </p>
     </section>
   );

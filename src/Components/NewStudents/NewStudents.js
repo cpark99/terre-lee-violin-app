@@ -49,7 +49,7 @@ export default function NewStudents(props) {
       </NavLink>
       <h2 className="page-sub-title">APPLICATION PROCESS</h2>
       <p>
-        Please submit an <a href="/apply">application</a> if you would like to apply. The
+        Please submit an <NavLink to="/apply">application</NavLink> if you would like to apply. The
         application process will be a phone interview, an observation of a private lesson & group
         class, and a follow up phone call.
       </p>
@@ -67,7 +67,7 @@ export default function NewStudents(props) {
         <p id="new-students-contact-number">831.295.0911</p>
       </a>
       <p>
-        Interested? <a href="/contact">Contact</a> me!
+        Interested? <NavLink to="/contact">Contact</NavLink> me!
       </p>
     </section>
   );

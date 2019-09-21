@@ -21,7 +21,7 @@
 }
 
 #suzuki-image {
-  height: 255px;
+  height: 49vh;
   background: url('../../img/Suzuki.jpg');
   background-position: center;
   background-size: cover;
@@ -40,4 +40,10 @@
 
 .sub-title {
   margin-top: 15px;
+}
+
+@media (max-width: 666px) and (orientation: landscape) {
+  #suzuki-image {
+    height: 460px;
+  }
 }

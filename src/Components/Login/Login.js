@@ -62,10 +62,10 @@ export default class Login extends Component {
             <label htmlFor="password">Password:</label>
             <input type="password" name="password" id="password" required />
           </div>
-          <button id="login-form-button">Login</button>
+          <button id="login-form-button">LOGIN</button>
         </form>
         <p>
-          <span className="italic">New student?</span> <NavLink to={'/apply'}>Apply here</NavLink>
+          New student? <NavLink to={'/apply'}>Apply</NavLink> here
         </p>
       </section>
     );

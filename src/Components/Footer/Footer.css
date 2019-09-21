@@ -11,16 +11,19 @@ footer {
 
 footer p {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
+  font-size: 14px;
+}
+
+footer a {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-weight: initial;
+  font-size: 13px;
 }
 
 footer a:link,
 footer a:visited {
   color: white;
-  margin-top: 50px;
-  margin-bottom: 60px;
-  font-weight: initial;
-  font-size: 13px;
 }
 
 footer a:hover {
@@ -34,4 +37,57 @@ footer a:hover {
 
 .italic {
   font-style: italic;
+}
+
+@media (min-width: 568px) {
+  footer {
+    padding-bottom: 30px;
+  }
+
+  footer a {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 667px) {
+  #pre-footer {
+    height: 60px;
+  }
+
+  footer {
+    padding-bottom: 50px;
+  }
+
+  footer a {
+    margin-top: 85px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 736px) {
+  #pre-footer {
+    height: 64px;
+  }
+
+  footer a {
+    margin-top: 65px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  #pre-footer {
+    height: 64px;
+  }
+
+  footer a {
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-height: 812px) and (max-width: 375px) {
+  footer a {
+    margin-bottom: 55px;
+  }
 }

@@ -86,6 +86,10 @@ h5 {
   width: 100%;
 }
 
+#nav-header p {
+  width: initial;
+}
+
 .nav-menu-dropdown-list {
   list-style: none;
   padding: 0 0 0 12px;

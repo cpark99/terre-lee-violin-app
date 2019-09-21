@@ -51,6 +51,33 @@ export default function Contact() {
           </a>
         </p>
       </div>
+      <form
+        id="email-form"
+        className="flex-column-center"
+        action="mailto:cpwebdeveloper99@gmail.com?subject='Re: Violin (website) - contact email'"
+        method="post"
+        enctype="text/plain"
+      >
+        <div className="form-field">
+          <label htmlFor="name">Name *</label>
+          <input type="text" name="name" id="name" placeholder="Jane Doe" required />
+        </div>
+        <div className="form-field">
+          <label htmlFor="email">Email *</label>
+          <input type="email" name="email" id="email" placeholder="jdoe@gmail.com" required />
+        </div>
+        <div className="form-field">
+          <label htmlFor="subject">Subject *</label>
+          <input type="text" name="subject" id="subject" required />
+        </div>
+        <div className="form-field">
+          <label htmlFor="message">Message *</label>
+          <textarea type="text" name="message" id="message" required />
+        </div>
+        <button id="email-form-button" className="black-button">
+          SUBMIT
+        </button>
+      </form>
     </section>
   );
 }

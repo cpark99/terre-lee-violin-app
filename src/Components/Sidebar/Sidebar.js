@@ -38,7 +38,7 @@ export default function Sidebar(props) {
         </NavLink>
         <p>
           <NavLink to="/login" onClick={handleClose}>
-            Login
+            LOGIN
           </NavLink>
         </p>
       </div>

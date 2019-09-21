@@ -29,10 +29,14 @@ export default function SuzukiMethod(props) {
         as when speaking their native language.
       </p>
       <p>For an in depth look at the Suzuki method, please visit:</p>
-      <a href="https://suzukiassociation.org/">
+      <a href="https://suzukiassociation.org/" target="_blank" rel="noopener noreferrer">
         <p>https://suzukiassociation.org/</p>
       </a>
-      <a href="https://suzukiassociation.org/people/terre-lee/">
+      <a
+        href="https://suzukiassociation.org/people/terre-lee/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <p>https://suzukiassociation.org/people/terre-lee/</p>
       </a>
       <h1 className="page-title sub-title">THE SUZUKI TRIANGLE</h1>

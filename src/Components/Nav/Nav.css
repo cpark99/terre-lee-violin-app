@@ -36,7 +36,7 @@ header a:hover,
 
 #hamburger {
   font-size: 31px;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
 }
 
 #close {
@@ -69,4 +69,141 @@ header a:hover,
 .main-header {
   position: relative;
   bottom: 50px;
+}
+
+@media (min-width: 667px) {
+  .nav-image {
+    background-position-y: -271px;
+  }
+}
+
+@media (min-width: 736px) {
+  .nav-image {
+    background-position-y: -315px;
+  }
+}
+
+@media (min-width: 768px) {
+  header h3 {
+    font-size: 20px;
+  }
+
+  .nav-image {
+    height: 340px;
+    background-position-y: -236px;
+  }
+
+  .main-header {
+    bottom: 138px;
+  }
+}
+
+@media (min-height: 812px) and (max-width: 375px) {
+  .nav-image {
+    background-position-y: -25px;
+  }
+
+  .main-header {
+    bottom: 135px;
+  }
+}
+
+@media (min-width: 812px) {
+  .nav-image {
+    background-position-y: -346px;
+  }
+
+  .main-header {
+    bottom: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav {
+    height: 83px;
+  }
+
+  #nav-menu-desktop-container {
+    display: flex;
+    align-items: baseline;
+    margin-top: 0;
+  }
+
+  #nav-menu-desktop {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  #nav-menu-apply-button h5 {
+    margin: 0;
+  }
+
+  #nav-menu-apply-button h5:hover {
+    color: black;
+  }
+
+  #bookings-dropdown-desktop {
+    height: 44px;
+  }
+
+  #studio-dropdown-desktop {
+    padding: 8px 14px 4px;
+  }
+
+  #studio-dropdown-desktop h5 {
+    padding: 4px 0 10px;
+  }
+
+  .nav-dropdown-desktop {
+    position: absolute;
+    top: 119px;
+  }
+
+  .nav-dropdown-desktop-small {
+    position: absolute;
+    top: 58px;
+  }
+
+  .nav-image {
+    height: 200px;
+    background-position-y: -436px;
+  }
+
+  .main-header {
+    bottom: 60px;
+  }
+
+  .nav-menu-item {
+    margin-left: 20px;
+  }
+
+  .nav-menu-item h5:hover {
+    cursor: pointer;
+    color: #70e2d9;
+  }
+
+  .nav-dropdown-desktop h5,
+  .nav-dropdown-desktop-small h5 {
+    margin: 0;
+  }
+
+  .gray-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #212121;
+    border: 2px solid #212121;
+    border-radius: 0;
+    padding: 0 28px;
+  }
+
+  .gray-button:hover {
+    color: black;
+  }
+
+  .gray-button h5:hover {
+    color: black;
+  }
 }

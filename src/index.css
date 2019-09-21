@@ -23,13 +23,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h3,
 h5,
-li a {
+li a,
+footer a {
   font-family: 'Work Sans', sans-serif;
 }
 
 p,
 a,
+label,
 blockquote {
   font-family: 'EB Garamond', serif;
 }

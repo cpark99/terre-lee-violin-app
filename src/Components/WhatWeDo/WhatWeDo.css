@@ -26,6 +26,7 @@ blockquote {
 #what-we-celebrate-list {
   width: 85%;
   margin: 0;
+  padding-left: 4px;
 }
 
 .blockquote-quote {
