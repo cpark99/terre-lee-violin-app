@@ -1,0 +1,24 @@
+.page-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.page-dropdown-list li {
+  padding-bottom: 34px;
+}
+
+.page-dropdown-list li a {
+  font-size: 14px;
+}
+
+.page-dropdown-list li a:link,
+.page-dropdown-list li a:visited {
+  color: rgba(26, 26, 26, 0.4);
+}
+
+.page-dropdown-list li a:hover {
+  color: black;
+}

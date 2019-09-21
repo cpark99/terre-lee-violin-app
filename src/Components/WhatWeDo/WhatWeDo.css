@@ -34,3 +34,11 @@ blockquote {
   opacity: 0.3;
   margin-top: 55px;
 }
+
+@media (min-width: 1000px) {
+  #what-we-do {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: self-start;
+  }
+}
