@@ -22,3 +22,12 @@
 .page-dropdown-list li a:hover {
   color: black;
 }
+
+.page-active {
+  color: black;
+}
+
+.page-dropdown-list li .page-active:link,
+.page-dropdown-list li .page-active:visited {
+  color: black;
+}

@@ -5,7 +5,7 @@ blockquote {
   font-weight: 400;
   color: rgba(26, 26, 26, 0.9);
   text-align: center;
-  margin-top: -16px;
+  margin-top: -29px;
   margin-bottom: 43px;
 }
 
@@ -16,7 +16,7 @@ blockquote {
 #what-we-do h1 {
   width: 100%;
   margin-top: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 #what-we-do p {
@@ -30,18 +30,18 @@ blockquote {
 #what-we-celebrate-list {
   width: 85%;
   margin: 0;
-  padding-left: 38px;
+  padding-left: 40px;
 }
 
 .blockquote-quote {
-  font-size: 4em;
+  font-size: 76px;
   opacity: 0.3;
   margin-top: 55px;
 }
 
 @media (min-width: 667px) {
   blockquote {
-    margin-top: -26px;
+    margin-top: -33px;
   }
 
   #what-we-do {
@@ -52,8 +52,8 @@ blockquote {
   }
 
   #studio-information {
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   #studio-images {
@@ -78,6 +78,69 @@ blockquote {
   }
 
   .blockquote-quote {
-    margin-top: 5px;
+    margin-top: -4px;
+  }
+}
+
+@media (min-width: 736px) {
+  blockquote {
+    width: 127px;
+    margin-bottom: 28px;
+  }
+
+  #studio-information {
+    padding-right: 64px;
+  }
+
+  #studio-images {
+    width: 191px;
+  }
+
+  #studio-images img {
+    width: 191px;
+  }
+}
+
+@media (min-width: 768px) {
+  #what-we-do {
+    margin-top: 60px;
+    padding-bottom: 90px;
+  }
+
+  #studio-information h1 {
+    padding-right: 40px;
+  }
+
+  #studio-images img {
+    width: 207px;
+  }
+}
+
+@media (min-width: 812px) and (max-height: 375px) {
+  #studio-information {
+    margin-left: 65px;
+  }
+}
+
+@media (min-width: 1000px) {
+  blockquote {
+    width: 260px;
+  }
+
+  #studio-information {
+    padding: 0;
+    width: 333px;
+  }
+
+  #studio-images,
+  #studio-images img {
+    width: 333px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #what-we-do {
+    padding-left: 230px;
+    padding-right: 230px;
   }
 }
