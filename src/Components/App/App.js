@@ -72,7 +72,9 @@ class App extends React.Component {
       { xsmall: 0 }, // all mobile devices
       { mobileLandscape: 415 }, // up to iphone6+
       { small: 576 }, // mobile devices (not sure which one's this big)
+      { smallMed: 667 }, // iphone 6 landscape
       { medium: 768 }, // ipad, ipad pro, ipad mini, etc
+      { medLarge: 812 }, // iphone X
       { large: 992 }, // smaller laptops
       { tabletLandscape: 1000 },
       { xlarge: 1200 } // laptops and desktops

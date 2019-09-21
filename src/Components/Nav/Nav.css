@@ -71,6 +71,33 @@ header a:hover,
   bottom: 50px;
 }
 
+@media (min-width: 375px) and (orientation: portrait) {
+  .nav-image {
+    height: 200px;
+  }
+
+  .main-header {
+    bottom: 70px;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  .nav-image {
+    height: 335px;
+    background-position-y: bottom;
+  }
+
+  .main-header {
+    bottom: 139px;
+  }
+}
+
+@media (min-width: 568px) {
+  .nav-image {
+    background-position-y: -218px;
+  }
+}
+
 @media (min-width: 667px) {
   .nav-image {
     background-position-y: -271px;
@@ -98,27 +125,7 @@ header a:hover,
   }
 }
 
-@media (min-height: 812px) and (max-width: 375px) {
-  .nav-image {
-    background-position-y: -25px;
-  }
-
-  .main-header {
-    bottom: 135px;
-  }
-}
-
 @media (min-width: 812px) {
-  .nav-image {
-    background-position-y: -346px;
-  }
-
-  .main-header {
-    bottom: 30px;
-  }
-}
-
-@media (min-width: 1000px) {
   nav {
     height: 83px;
   }
@@ -157,7 +164,7 @@ header a:hover,
 
   .nav-dropdown-desktop {
     position: absolute;
-    top: 119px;
+    top: 99px;
   }
 
   .nav-dropdown-desktop-small {
@@ -166,12 +173,11 @@ header a:hover,
   }
 
   .nav-image {
-    height: 200px;
-    background-position-y: -436px;
+    background-position-y: -346px;
   }
 
   .main-header {
-    bottom: 60px;
+    bottom: 30px;
   }
 
   .nav-menu-item {
@@ -205,5 +211,85 @@ header a:hover,
 
   .gray-button h5:hover {
     color: black;
+  }
+}
+
+@media (min-width: 667px) {
+  .what-we-do-nav {
+    background-position-y: -167px;
+  }
+
+  header h3 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 812px) and (max-height: 375px) {
+  .nav-image {
+    height: 160px;
+  }
+
+  .main-header {
+    bottom: 38px;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* nav {
+    height: 83px;
+  } */
+
+  /* #nav-menu-desktop-container {
+    display: flex;
+    align-items: baseline;
+    margin-top: 0;
+  } */
+
+  /* #nav-menu-desktop {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  } */
+
+  /* #nav-menu-apply-button h5 {
+    margin: 0;
+  } */
+
+  #bookings-dropdown-desktop {
+    height: 44px;
+  }
+
+  .nav-dropdown-desktop {
+    /* position: absolute; */
+    top: 119px;
+  }
+
+  .nav-dropdown-desktop-small {
+    /* position: absolute; */
+    top: 58px;
+  }
+
+  .nav-image {
+    height: 200px;
+    background-position-y: -436px;
+  }
+
+  .main-header {
+    bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-image {
+    height: 335px;
+    background-position-y: -580px;
+  }
+
+  .main-header {
+    bottom: 128px;
+  }
+
+  .nav-dropdown-desktop {
+    top: 187px;
   }
 }

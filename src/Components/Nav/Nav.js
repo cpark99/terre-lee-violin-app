@@ -83,7 +83,7 @@ export default function Nav(props) {
           <NavLink to="/" onClick={handleClose}>
             <h3>TERRE LEE</h3>
           </NavLink>
-          <Breakpoint large down>
+          <Breakpoint medium down>
             <UserContext.Consumer>
               {value => (
                 <div
@@ -100,7 +100,7 @@ export default function Nav(props) {
               )}
             </UserContext.Consumer>
           </Breakpoint>
-          <Breakpoint tabletLandscape up>
+          <Breakpoint medLarge up>
             <div id="nav-menu-desktop-container">
               <ul id="nav-menu-desktop">
                 <li className="nav-menu-item">
