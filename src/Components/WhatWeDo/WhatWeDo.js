@@ -4,8 +4,9 @@ import studentOne from '../../img/IMG_E2975.jpg';
 import studentTwo from '../../img/EB2019-SpringRecital-8775.jpg';
 import studentThree from '../../img/EB2019-SpringRecital-8716.jpg';
 import './WhatWeDo.css';
+import StudioDropdown from '../StudioDropdown/StudioDropdown';
 
-export default function PrivateEvents() {
+export default function WhatWeDo(props) {
   useEffect(() => {
     document.title = 'What We Do | Terre Lee';
   });
@@ -13,6 +14,7 @@ export default function PrivateEvents() {
   return (
     <section id="what-we-do" className="container">
       <ScrollToTopOnMount />
+      <StudioDropdown location={props.location} />
       <h1 className="page-title">THE VIOLIN STUDIO</h1>
       <p>
         At Terre's Suzuki violin studio, students as young as 2 engage in a playful, whole brain

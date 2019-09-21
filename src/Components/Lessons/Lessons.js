@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import lessonTwo from '../../img/EB2019-SpringRecital-8700.jpg';
+import StudioDropdown from '../StudioDropdown/StudioDropdown';
 import './Lessons.css';
 
-export default function Lessons() {
+export default function Lessons(props) {
   useEffect(() => {
     document.title = 'Lessons | Terre Lee';
   });
@@ -11,6 +12,7 @@ export default function Lessons() {
   return (
     <section id="lessons" className="container">
       <ScrollToTopOnMount />
+      <StudioDropdown location={props.location} />
       <h1 className="page-title">PRIVATE LESSONS</h1>
       <div
         id="lesson-one-image"

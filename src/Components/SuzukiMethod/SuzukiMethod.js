@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
+import StudioDropdown from '../StudioDropdown/StudioDropdown';
 import './SuzukiMethod.css';
 
-export default function SuzukiMethod() {
+export default function SuzukiMethod(props) {
   useEffect(() => {
     document.title = 'Suzuki Method | Terre Lee';
   });
@@ -11,6 +12,7 @@ export default function SuzukiMethod() {
   return (
     <section id="suzuki-method" className="container">
       <ScrollToTopOnMount />
+      <StudioDropdown location={props.location} />
       <div
         id="suzuki-image"
         className="main-image"

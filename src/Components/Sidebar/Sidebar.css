@@ -27,6 +27,15 @@ h5 {
   color: white;
 }
 
+#sidebar-nav-menu p a:link,
+#sidebar-nav-menu p a:visited {
+  color: #3d9991;
+}
+
+#sidebar-nav-menu p a:hover {
+  color: #70e2d9;
+}
+
 #nav-menu-contact-button,
 #nav-menu-apply-button {
   border-radius: 300px;
@@ -68,6 +77,13 @@ h5 {
 #nav-menu-apply-button:hover {
   background: #3d9991;
   color: black;
+}
+
+#nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .nav-menu-dropdown-list {

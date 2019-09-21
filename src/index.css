@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -14,8 +18,24 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h5,
+li a {
+  font-family: 'Work Sans', sans-serif;
+}
+
+p,
+a,
+blockquote {
+  font-family: 'EB Garamond', serif;
+}
+
+.blockquote-quote {
+  font-family: 'Be Vietnam', sans-serif;
 }
 
 code {

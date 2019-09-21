@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
+import StudioDropdown from '../StudioDropdown/StudioDropdown';
 import './NewStudents.css';
 
-export default function NewStudents() {
+export default function NewStudents(props) {
   useEffect(() => {
     document.title = 'Prospective Students | Terre Lee';
   });
@@ -11,6 +12,7 @@ export default function NewStudents() {
   return (
     <section id="new-students" className="container">
       <ScrollToTopOnMount />
+      <StudioDropdown location={props.location} />
       <h1 className="page-title">WHY VIOLIN?</h1>
       <p>
         With learning an instrument, we learn to play a beautiful instrument and to appreciate

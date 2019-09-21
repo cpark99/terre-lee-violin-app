@@ -32,11 +32,18 @@ export default function Sidebar(props) {
 
   return (
     <section id="sidebar-nav-menu">
-      <NavLink to="/" onClick={handleClose}>
-        <h5>TERRE LEE</h5>
-      </NavLink>
+      <div id="nav-header">
+        <NavLink to="/" onClick={handleClose}>
+          <h5>TERRE LEE</h5>
+        </NavLink>
+        <p>
+          <NavLink to="/login" onClick={handleClose}>
+            Login
+          </NavLink>
+        </p>
+      </div>
       <h5 id="bookings-menu" onClick={toggleBookingsMenu}>
-        {showBookings ? <span>-&nbsp;</span> : '+'} BOOKINGS
+        {showBookings ? <span>-</span> : '+'} BOOKINGS
       </h5>
       {showBookings && (
         <ul id="bookings-dropdown" className="nav-menu-dropdown-list">
@@ -48,7 +55,7 @@ export default function Sidebar(props) {
         </ul>
       )}
       <h5 id="studio-menu" onClick={toggleStudioMenu}>
-        {showStudio ? <span>-&nbsp;</span> : '+'} TEACHING STUDIO
+        {showStudio ? <span>-</span> : '+'} TEACHING STUDIO
       </h5>
       {showStudio && (
         <ul id="studio-dropdown" className="nav-menu-dropdown-list">
@@ -68,7 +75,7 @@ export default function Sidebar(props) {
             </NavLink>
           </li>
           <li className="studio-item nav-menu-dropdown-item">
-            <NavLink to="/suzuki-method" onClick={handleClose}>
+            <NavLink to="/suzuki" onClick={handleClose}>
               <h5>SUZUKI METHOD</h5>
             </NavLink>
           </li>

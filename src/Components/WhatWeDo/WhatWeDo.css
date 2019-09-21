@@ -5,11 +5,18 @@ blockquote {
   font-weight: 400;
   color: rgba(26, 26, 26, 0.9);
   text-align: center;
-  margin-top: -10px;
+  margin-top: -16px;
+  margin-bottom: 43px;
+}
+
+#what-we-do {
+  padding-top: 50px;
 }
 
 #what-we-do h1 {
   width: 100%;
+  margin-top: 18px;
+  margin-bottom: 12px;
 }
 
 #what-we-do p {

@@ -40,7 +40,11 @@ export default function Nav(props) {
           </NavLink>
           <UserContext.Consumer>
             {value => (
-              <div id="hamburger" className="nav-item" onClick={value.toggleSidebarNav}>
+              <div
+                id={props.showNavMenu ? 'close' : 'hamburger'}
+                className="nav-item"
+                onClick={value.toggleSidebarNav}
+              >
                 {props.showNavMenu ? (
                   <React.Fragment>&#215;</React.Fragment>
                 ) : (

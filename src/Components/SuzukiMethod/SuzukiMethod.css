@@ -1,3 +1,7 @@
+#suzuki-method {
+  padding-top: 54px;
+}
+
 #suzuki-method h1,
 #suzuki-method p {
   width: 100%;
@@ -21,7 +25,8 @@
   background: url('../../img/Suzuki.jpg');
   background-position: center;
   background-size: cover;
-  margin-top: 45px;
+  margin-top: 16px;
+  margin-bottom: 10px;
 }
 
 .bold {
