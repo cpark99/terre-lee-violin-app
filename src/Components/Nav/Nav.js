@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useHover } from 'use-events';
 import UserContext from '../../context';
@@ -10,6 +10,9 @@ export default function Nav(props) {
   const [showStudio, setShowStudio] = useState(false);
   const [isHovering, hoverProps] = useHover();
   const [studioIsHovering, studioHoverProps] = useHover();
+
+  const bookingsRef = useRef();
+  const studioRef = useRef();
 
   function toggleBookingsMenu() {
     if (showBookings === false) {
@@ -39,6 +42,27 @@ export default function Nav(props) {
     setShowBookings(false);
     setShowStudio(false);
   }
+
+  function handleOutsideClick(e) {
+    if (bookingsRef.current.contains(e.target)) {
+      return;
+    }
+    if (studioRef.current.contains(e.target)) {
+      return;
+    }
+    // outside
+    handleClose();
+  }
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleOutsideClick);
+    document.addEventListener('touchstart', handleOutsideClick);
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener('touchstart', handleOutsideClick);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function imageByLocation() {
     if (props.location.pathname === '/') {
@@ -113,7 +137,7 @@ export default function Nav(props) {
                     <h5>TERRE LEE</h5>
                   </NavLink>
                 </li>
-                <li {...hoverProps} className="nav-menu-item">
+                <li {...hoverProps} className="nav-menu-item" ref={bookingsRef}>
                   <h5 onClick={toggleBookingsMenu}>BOOKINGS</h5>
                   {(showBookings || isHovering) && (
                     <div id="bookings-dropdown-desktop" className={dropdownByLocation()}>
@@ -123,7 +147,7 @@ export default function Nav(props) {
                     </div>
                   )}
                 </li>
-                <li {...studioHoverProps} className="nav-menu-item">
+                <li {...studioHoverProps} className="nav-menu-item" ref={studioRef}>
                   <h5 onClick={toggleStudioMenu}>TEACHING STUDIO</h5>
                   {(showStudio || studioIsHovering) && (
                     <div id="studio-dropdown-desktop" className={dropdownByLocation()}>
