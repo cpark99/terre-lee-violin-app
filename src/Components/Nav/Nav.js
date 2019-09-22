@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import useHover from 'react-use-hover';
 import UserContext from '../../context';
-import './Nav.css';
 import { Breakpoint } from 'react-socks';
+import './Nav.css';
 
 export default function Nav(props) {
   const [showBookings, setShowBookings] = useState(false);
   const [showStudio, setShowStudio] = useState(false);
+  const [isHovering, hoverProps] = useHover();
+  const [studioIsHovering, studioHoverProps] = useHover();
 
   function toggleBookingsMenu() {
     if (showBookings === false) {
@@ -108,9 +111,9 @@ export default function Nav(props) {
                     <h5>TERRE LEE</h5>
                   </NavLink>
                 </li>
-                <li className="nav-menu-item">
+                <li {...hoverProps} className="nav-menu-item">
                   <h5 onClick={toggleBookingsMenu}>BOOKINGS</h5>
-                  {showBookings && (
+                  {(showBookings || isHovering) && (
                     <div id="bookings-dropdown-desktop" className={dropdownByLocation()}>
                       <NavLink to="/private-events" onClick={handleClose}>
                         <h5>PRIVATE EVENTS</h5>
@@ -118,9 +121,9 @@ export default function Nav(props) {
                     </div>
                   )}
                 </li>
-                <li className="nav-menu-item">
+                <li {...studioHoverProps} className="nav-menu-item">
                   <h5 onClick={toggleStudioMenu}>TEACHING STUDIO</h5>
-                  {showStudio && (
+                  {(showStudio || studioIsHovering) && (
                     <div id="studio-dropdown-desktop" className={dropdownByLocation()}>
                       <NavLink to="/what-we-do" onClick={handleClose}>
                         <h5>THE STUDIO</h5>
@@ -149,7 +152,7 @@ export default function Nav(props) {
                 </button>
               </NavLink>
               <NavLink to="/contact" onClick={handleClose}>
-                <button id="nav-menu-contact-button" className="nav-menu-item">
+                <button id="nav-menu-contact-button" className="">
                   <h5 id="contact-nav-button">CONTACT</h5>
                 </button>
               </NavLink>
