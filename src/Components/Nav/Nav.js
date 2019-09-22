@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import useHover from 'react-use-hover';
+import { useHover } from 'use-events';
 import UserContext from '../../context';
 import { Breakpoint } from 'react-socks';
 import './Nav.css';
