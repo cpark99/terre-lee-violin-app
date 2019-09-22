@@ -320,6 +320,10 @@ header a:hover,
   .new-students-nav {
     background-position-y: -192px;
   }
+
+  .nav-lessons-dropdown-landscape {
+    top: 89px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -360,6 +364,10 @@ header a:hover,
   .new-students-nav {
     background-position-y: -243px;
   }
+
+  .nav-lessons-dropdown-landscape {
+    top: 89px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -391,5 +399,9 @@ header a:hover,
 
   .new-students-nav {
     background-position-y: -310px;
+  }
+
+  .nav-lessons-dropdown-landscape {
+    top: 217px;
   }
 }

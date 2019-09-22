@@ -74,6 +74,8 @@ export default function Nav(props) {
       return 'nav-dropdown-desktop-small gray-container';
     } else if (props.location.pathname === '/private-events') {
       return 'nav-dropdown-desktop-small gray-container';
+    } else if (props.location.pathname === '/lessons') {
+      return 'nav-dropdown-desktop nav-lessons-dropdown-landscape gray-container';
     } else {
       return 'nav-dropdown-desktop gray-container';
     }
