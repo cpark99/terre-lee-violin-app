@@ -54,7 +54,7 @@ export default function WhatWeDo(props) {
       </div>
       <div id="studio-images" className="flex-column-center">
         <span className="blockquote-quote">"</span>
-        <blockquote>“Beautiful tone, beautiful heart.” - Dr. Suzuki</blockquote>
+        <blockquote>“Beautiful tone, beautiful heart.” - Dr. Shinichi Suzuki</blockquote>
         <img className="main-image" src={studentOne} alt="student learing to play violin" />
         <img className="main-image" src={studentTwo} alt="student playing violin" />
         <img

@@ -76,11 +76,6 @@ a:hover {
   padding: 10px 0;
 }
 
-.fixed-image {
-  width: 275px;
-  padding: 10px 0;
-}
-
 .main-sub-section {
   padding-bottom: 35px;
 }
@@ -112,7 +107,7 @@ a:hover {
     padding-right: 30px;
   }
 
-  .flex-responsive-landscape {
+  .flex-responsive-landscape-main {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -135,5 +130,16 @@ a:hover {
 
   #introduction button {
     margin-top: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    padding-left: 230px;
+    padding-right: 230px;
+  }
+
+  section p {
+    width: 630px;
   }
 }

@@ -1,17 +1,51 @@
+#new-students .breakpoint__small-down {
+  width: 100%;
+}
+
 #new-students h1 {
   width: 100%;
   margin-top: 18px;
   margin-bottom: 14px;
 }
 
+#new-students-information h2 {
+  margin-bottom: 20px;
+}
+
 #new-students-contact-number {
   margin-top: 0;
 }
 
-#new-students {
-  padding-top: 52px;
+#what-we-celebrate-list {
+  width: 85%;
+  margin: 0;
+  padding-left: 20px;
 }
 
 .to-application-button {
   margin: 20px 0;
+}
+
+@media (min-width: 736px) {
+  #new-students-information {
+    width: 417px;
+  }
+}
+
+@media (min-width: 768px) {
+  #new-students-information {
+    width: 449px;
+  }
+}
+
+@media (min-width: 812px) {
+  #new-students-information {
+    width: 493px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #new-students-information {
+    width: 701px;
+  }
 }

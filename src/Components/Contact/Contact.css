@@ -1,6 +1,7 @@
 #contact {
   justify-content: flex-start;
   align-items: flex-start;
+  padding-top: 30px;
   padding-bottom: 45px;
 }
 
@@ -14,6 +15,7 @@
 
 #email-form {
   margin-top: 15px;
+  padding-left: 10px;
 }
 
 #email-form-button {
@@ -46,4 +48,45 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media (min-width: 667px) {
+  #email-form {
+    margin-top: 10px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 736px) {
+  #email-form {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact {
+    padding-top: 90px;
+  }
+
+  #email-form {
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: 812px) {
+  #email-form {
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #email-form {
+    padding-left: 140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #email-form {
+    padding-left: 156px;
+  }
 }

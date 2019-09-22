@@ -30,10 +30,10 @@ export default function Application(props) {
   }
 
   return (
-    <section id="application" className="container">
+    <section id="application" className="container form-page-container">
       <ScrollToTopOnMount />
       <h1 className="page-title">APPLY NOW</h1>
-      <form id="application-form" className="flex-column-center">
+      <form id="application-form" className="flex-column-center form-page">
         <div className="form-field">
           <label htmlFor="name">Full Name *</label>
           <input
@@ -64,7 +64,7 @@ export default function Application(props) {
             type="tel"
             name="phone"
             id="phone"
-            placeholder="(818)888-8888"
+            placeholder="888-888-8888"
             required
             value={phone}
             onChange={handlePhoneChange}

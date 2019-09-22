@@ -1,13 +1,60 @@
+#private-events h2 {
+  margin-bottom: 14px;
+}
+
+#private-lessons-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#private-events-picture {
+  width: 275px;
+  padding: 10px 0;
+}
+
 .page-title {
   margin-top: 42px;
   font-size: 22px;
-  /* font-weight: initial; */
 }
 
 .page-sub-title {
-  /* font-weight: initial; */
   font-size: 22px;
   width: 100%;
   margin-top: 22px;
   margin-bottom: 0;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  #private-events-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #private-events-picture {
+    height: 180px;
+  }
+}
+
+@media (min-width: 414px) {
+  #private-events-picture {
+    width: 275px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 667px) {
+  #private-events-title {
+    margin-top: 15px;
+  }
+
+  .page-sub-title {
+    width: initial;
+  }
+}
+
+@media (min-width: 1000px) {
+  #private-events-information {
+    width: 600px;
+  }
 }

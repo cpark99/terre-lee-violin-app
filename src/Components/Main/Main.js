@@ -28,7 +28,7 @@ export default function Main() {
         <NavLink to="/apply">
           <button>Apply Now</button>
         </NavLink>
-        <div className="flex-responsive-landscape">
+        <div className="flex-responsive-landscape-main">
           <div id="teaching-studio" className="main-sub-section flex-column-center-center">
             <img
               className="main-image"

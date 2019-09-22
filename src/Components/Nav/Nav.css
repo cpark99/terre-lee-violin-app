@@ -71,6 +71,12 @@ header a:hover,
   bottom: 50px;
 }
 
+@media (max-width: 374px) {
+  .lessons-nav {
+    height: 144px;
+  }
+}
+
 @media (min-width: 375px) and (orientation: portrait) {
   .nav-image {
     height: 200px;
@@ -78,6 +84,14 @@ header a:hover,
 
   .main-header {
     bottom: 70px;
+  }
+
+  .lessons-nav {
+    height: 144px;
+  }
+
+  .lessons-header {
+    bottom: 43px;
   }
 }
 
@@ -90,11 +104,32 @@ header a:hover,
   .main-header {
     bottom: 139px;
   }
+
+  .lessons-nav {
+    height: 399px;
+  }
+
+  .lessons-header {
+    bottom: 170px;
+  }
 }
 
 @media (min-width: 568px) {
   .nav-image {
     background-position-y: -218px;
+  }
+
+  .lessons-nav {
+    height: 144px;
+    background-position-y: -118px;
+  }
+
+  .lessons-header {
+    bottom: 44px;
+  }
+
+  .new-students-nav {
+    background-position-y: -109px;
   }
 }
 
@@ -102,11 +137,23 @@ header a:hover,
   .nav-image {
     background-position-y: -271px;
   }
+
+  .lessons-nav {
+    background-position-y: -150px;
+  }
+
+  .new-students-nav {
+    background-position-y: -142px;
+  }
 }
 
 @media (min-width: 736px) {
   .nav-image {
     background-position-y: -315px;
+  }
+
+  .new-students-nav {
+    background-position-y: -166px;
   }
 }
 
@@ -122,6 +169,35 @@ header a:hover,
 
   .main-header {
     bottom: 138px;
+  }
+
+  .new-students-nav {
+    background-position-y: -86px;
+  }
+}
+
+@media (min-width: 667px) {
+  .what-we-do-nav {
+    background-position-y: -167px;
+  }
+
+  header h3 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .what-we-do-nav {
+    background-position-y: -111px;
+  }
+
+  .lessons-nav {
+    height: 399px;
+    background-position-y: -58px;
+  }
+
+  .lessons-header {
+    bottom: 172px;
   }
 }
 
@@ -214,22 +290,6 @@ header a:hover,
   }
 }
 
-@media (min-width: 667px) {
-  .what-we-do-nav {
-    background-position-y: -167px;
-  }
-
-  header h3 {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 768px) {
-  .what-we-do-nav {
-    background-position-y: -111px;
-  }
-}
-
 @media (min-width: 812px) and (max-height: 375px) {
   #what-we-do {
     padding-top: 75px;
@@ -245,6 +305,19 @@ header a:hover,
 
   .main-header {
     bottom: 38px;
+  }
+
+  .lessons-nav {
+    height: 144px;
+    background-position-y: -200px;
+  }
+
+  .lessons-header {
+    bottom: 32px;
+  }
+
+  .new-students-nav {
+    background-position-y: -192px;
   }
 }
 
@@ -273,19 +346,49 @@ header a:hover,
   .main-header {
     bottom: 60px;
   }
+
+  .lessons-nav {
+    height: 144px;
+    background-position-y: -269px;
+  }
+
+  .lessons-header {
+    bottom: 29px;
+  }
+
+  .new-students-nav {
+    background-position-y: -243px;
+  }
 }
 
 @media (min-width: 1200px) {
   .nav-image {
     height: 335px;
-    background-position-y: -360px;
+    background-position-y: -580px;
   }
 
   .main-header {
     bottom: 128px;
   }
 
+  .what-we-do-nav {
+    background-position-y: -360px;
+  }
+
   .nav-dropdown-desktop {
     top: 187px;
+  }
+
+  .lessons-nav {
+    height: 400px;
+    background-position-y: -269px;
+  }
+
+  .lessons-header {
+    bottom: 160px;
+  }
+
+  .new-students-nav {
+    background-position-y: -310px;
   }
 }

@@ -3,16 +3,100 @@
   margin-top: 18px;
 }
 
+#lessons h2 {
+  margin-bottom: 30px;
+}
+
+#lessons .breakpoint__small-down {
+  width: 100%;
+}
+
 #lesson-one-image {
-  height: 44vh;
+  height: 43vh;
   background: url('../../img/Screen+Shot+2019-09-02+at+4.12.26+PM.png');
   background-position: center;
   background-size: cover;
   margin: 20px 0;
 }
 
-@media (max-width: 666px) {
+.flex-responsive-landscape {
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
   #lesson-one-image {
-    height: 400px;
+    height: 290px;
+  }
+}
+
+@media (min-width: 568px) {
+  #lesson-one-image {
+    height: 460px;
+  }
+}
+
+@media (min-width: 667px) {
+  #lessons-menu-desktop h2 {
+    margin-bottom: 8px;
+  }
+
+  .flex-responsive-landscape {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 18px;
+  }
+
+  .flex-responsive-landscape h1 {
+    margin-bottom: 16px;
+  }
+
+  .flex-responsive-landscape p {
+    width: 100%;
+  }
+
+  .responsive-column-landscape {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 348px;
+  }
+
+  #lesson-one-image {
+    height: 303px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #lesson-one-image {
+    height: 390px;
+  }
+
+  .flex-responsive-landscape {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+  .responsive-column-landscape {
+    width: 449px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .flex-responsive-landscape {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .responsive-column-landscape {
+    width: 670px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-responsive-landscape {
+    padding-left: 230px;
+    padding-right: 230px;
   }
 }

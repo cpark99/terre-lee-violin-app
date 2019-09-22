@@ -49,11 +49,15 @@ export default class Login extends Component {
   render() {
     const { error } = this.state;
     return (
-      <section id="login" className="container">
+      <section id="login" className="container form-page-container">
         <ScrollToTopOnMount />
         <h2>Login</h2>
         <div role="alert">{error && <p className="red-font">{error}</p>}</div>
-        <form className="flex-column-center" onSubmit={this.handleSubmitJwtAuth}>
+        <form
+          id="login-form"
+          className="flex-column-center form-page"
+          onSubmit={this.handleSubmitJwtAuth}
+        >
           <div className="form-field">
             <label htmlFor="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="jdoe@gmail.com" required />

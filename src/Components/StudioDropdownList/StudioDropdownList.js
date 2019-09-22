@@ -8,26 +8,32 @@ export default function StudioDropdownList(props) {
       <li>
         <NavLink
           to="/what-we-do"
-          className={props.location.pathname === '/what-we-do' && 'page-active'}
+          className={props.location.pathname === '/what-we-do' ? 'page-active' : ''}
         >
           THE STUDIO
         </NavLink>
       </li>
       <li>
-        <NavLink to="/lessons" className={props.location.pathname === '/lessons' && 'page-active'}>
+        <NavLink
+          to="/lessons"
+          className={props.location.pathname === '/lessons' ? 'page-active' : ''}
+        >
           LESSONS
         </NavLink>
       </li>
       <li>
         <NavLink
           to="/new-students"
-          className={props.location.pathname === '/new-students' && 'page-active'}
+          className={props.location.pathname === '/new-students' ? 'page-active' : ''}
         >
           PROSPECTIVE STUDENTS
         </NavLink>
       </li>
       <li>
-        <NavLink to="/suzuki" className={props.location.pathname === '/suzuki' && 'page-active'}>
+        <NavLink
+          to="/suzuki"
+          className={props.location.pathname === '/suzuki' ? 'page-active' : ''}
+        >
           SUZUKI METHOD
         </NavLink>
       </li>

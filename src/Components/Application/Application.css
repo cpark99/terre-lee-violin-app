@@ -28,6 +28,10 @@ form button {
   margin: 10px 0;
 }
 
+#application p {
+  text-align: center;
+}
+
 #application-form-button {
   margin-bottom: 30px;
 }

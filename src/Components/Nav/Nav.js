@@ -56,11 +56,11 @@ export default function Nav(props) {
     if (props.location.pathname === '/' || props.location.pathname === '/what-we-do') {
       return 'main-header';
     }
-    if (props.location.pathname === '/lessons' || props.location.pathname === '/new-students') {
+    if (props.location.pathname === '/new-students') {
       return 'main-header';
     }
-    if (props.location.pathname === '/suzuki method') {
-      return 'main-header';
+    if (props.location.pathname === '/lessons') {
+      return 'main-header lessons-header';
     }
   }
 

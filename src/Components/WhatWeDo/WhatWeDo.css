@@ -27,12 +27,6 @@ blockquote {
   width: 100%;
 }
 
-#what-we-celebrate-list {
-  width: 85%;
-  margin: 0;
-  padding-left: 40px;
-}
-
 .blockquote-quote {
   font-size: 76px;
   opacity: 0.3;
@@ -135,12 +129,5 @@ blockquote {
   #studio-images,
   #studio-images img {
     width: 333px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #what-we-do {
-    padding-left: 230px;
-    padding-right: 230px;
   }
 }

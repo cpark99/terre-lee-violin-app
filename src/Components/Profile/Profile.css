@@ -2,8 +2,16 @@
   margin-right: 15px;
 }
 
+#profile p {
+  width: initial;
+}
+
+#profile .question-text {
+  margin-top: 40px;
+}
+
 #to-reschedule-button {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 #reschedule-section {
@@ -18,4 +26,48 @@
 .question-text {
   font-size: 15px;
   margin-top: 0;
+}
+
+.profile-section-header {
+  text-align: center;
+}
+
+@media (min-width: 375px) and (min-height: 812px) {
+  #profile {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 667px) {
+  #profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 30px 40px 40px 60px;
+  }
+
+  .profile-section-header {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile {
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #profile {
+    padding-left: 100px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #profile {
+    padding-left: 250px;
+    padding-right: 150px;
+  }
 }
