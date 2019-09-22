@@ -33,6 +33,9 @@ export default function Application(props) {
     <section id="application" className="container form-page-container">
       <ScrollToTopOnMount />
       <h1 className="page-title">APPLY NOW</h1>
+      <p>
+        Interested? <NavLink to="/new-students">Click to learn more</NavLink>
+      </p>
       <form id="application-form" className="flex-column-center form-page">
         <div className="form-field">
           <label htmlFor="name">Full Name *</label>
