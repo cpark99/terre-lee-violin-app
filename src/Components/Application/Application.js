@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
+import UserContext from '../../context';
+import AuthApiService from '../../services/auth-api-service';
+import TokenService from '../../services/token-service';
 import './Application.css';
 
 export default function Application(props) {
@@ -8,6 +11,7 @@ export default function Application(props) {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     document.title = 'Apply | Terre Lee';
@@ -29,13 +33,47 @@ export default function Application(props) {
     setMessage(e.target.value);
   }
 
+  const context = useContext(UserContext);
+
+  function handleLoginSuccess(payload) {
+    const { history } = props;
+    const destination = (props.history.location.state || {}).from || '/profile';
+    context.setUserId(payload.user_id);
+    history.push(destination);
+  }
+
+  function handleDemoLogin(ev) {
+    ev.preventDefault();
+    setError(null);
+    let email = 'violin@demo.com';
+    let password = 'password';
+
+    AuthApiService.postLogin({
+      email: email,
+      password: password
+    })
+      .then(res => {
+        email = '';
+        password = '';
+        TokenService.saveAuthToken(res.authToken);
+        handleLoginSuccess(res.payload);
+      })
+      .catch(res => {
+        setError(res.error);
+      });
+  }
+
   return (
     <section id="application" className="container form-page-container">
       <ScrollToTopOnMount />
       <h1 className="page-title">APPLY NOW</h1>
+      <button onClick={handleDemoLogin} className="demo-login-button orange-button">
+        Demo
+      </button>
       <p>
         Interested? <NavLink to="/new-students">Click to learn more</NavLink>
       </p>
+      <div role="alert">{error && <p className="red-font">{error}</p>}</div>
       <form id="application-form" className="flex-column-center form-page">
         <div className="form-field">
           <label htmlFor="name">Full Name *</label>

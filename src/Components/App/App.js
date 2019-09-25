@@ -15,16 +15,37 @@ import Login from '../Login/Login';
 import Profile from '../Profile/Profile';
 import UserContext from '../../context';
 import Sidebar from '../Sidebar/Sidebar';
+import TokenService from '../../services/token-service';
+import AuthApiService from '../../services/auth-api-service';
+import UserApiService from '../../services/user-api-service';
 import './App.css';
 
 class App extends React.Component {
   state = {
-    showNavMenu: false
+    showNavMenu: false,
+    user: UserContext.nullUser,
+    user_id: '',
+    error: null,
+    hasError: false
   };
+
+  static getDerivedStateFromError(error) {
+    console.error(error);
+    return { hasError: true };
+  }
 
   componentDidMount() {
     document.addEventListener('mousedown', this.handleOutsideClick, false);
     document.addEventListener('touchstart', this.handleOutsideClick, false);
+
+    if (TokenService.hasAuthToken()) {
+      AuthApiService.getUserId().then(res => {
+        UserApiService.getUser(res.id)
+          .then(this.setUser)
+          .then(this.getUserId)
+          .catch(this.setError);
+      });
+    }
   }
 
   componentWillUnmount() {
@@ -55,17 +76,44 @@ class App extends React.Component {
     });
   };
 
+  getUserId = user => {
+    this.setState({ user_id: this.state.user.id });
+  };
+
+  setError = error => {
+    console.error(error);
+    this.setState({ error });
+  };
+
+  clearError = () => {
+    this.setState({ error: null });
+  };
+
+  setUser = user => {
+    this.setState({ user });
+  };
+
+  clearUser = () => {
+    this.setUser(UserContext.nullUser);
+  };
+
+  setUserId = user_id => {
+    this.setState({ user_id: user_id });
+  };
+
+  updateUser = () => {};
+
   render() {
     const value = {
-      // user: this.state.user,
-      // user_id: this.state.user_id,
-      // error: this.state.error,
-      // setError: this.setError,
-      // clearError: this.clearError,
-      // setUser: this.setUser,
-      // clearUser: this.clearUser,
-      // setUserId: this.setUserId,
-      // updateUser: this.updateUser,
+      user: this.state.user,
+      user_id: this.state.user_id,
+      error: this.state.error,
+      setError: this.setError,
+      clearError: this.clearError,
+      setUser: this.setUser,
+      clearUser: this.clearUser,
+      setUserId: this.setUserId,
+      updateUser: this.updateUser,
       toggleSidebarNav: this.toggleSidebarNav
     };
     setDefaultBreakpoints([

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
+import TokenService from '../../services/token-service';
+import AuthApiService from '../../services/auth-api-service';
+import UserContext from '../../context';
 import './Login.css';
 
 export default class Login extends Component {
@@ -13,38 +16,38 @@ export default class Login extends Component {
     }
   };
 
-  // static contextType = UserContext;
+  static contextType = UserContext;
 
   componentDidMount() {
     document.title = 'Student Login | Terre Lee';
   }
 
-  // handleLoginSuccess = payload => {
-  //   const { location, history } = this.props;
-  //   const destination = (location.state || {}).from || '/profile';
-  //   this.context.setUserId(payload.user_id);
-  //   history.push(destination);
-  // };
+  handleLoginSuccess = payload => {
+    const { location, history } = this.props;
+    const destination = (location.state || {}).from || '/profile';
+    this.context.setUserId(payload.user_id);
+    history.push(destination);
+  };
 
-  // handleSubmitJwtAuth = ev => {
-  //   ev.preventDefault();
-  //   this.setState({ error: null });
-  //   const { email, password } = ev.target;
+  handleSubmitJwtAuth = ev => {
+    ev.preventDefault();
+    this.setState({ error: null });
+    const { email, password } = ev.target;
 
-  //   AuthApiService.postLogin({
-  //     email: email.value,
-  //     password: password.value
-  //   })
-  //     .then(res => {
-  //       email.value = '';
-  //       password.value = '';
-  //       TokenService.saveAuthToken(res.authToken);
-  //       this.handleLoginSuccess(res.payload);
-  //     })
-  //     .catch(res => {
-  //       this.setState({ error: res.error });
-  //     });
-  // };
+    AuthApiService.postLogin({
+      email: email.value,
+      password: password.value
+    })
+      .then(res => {
+        email.value = '';
+        password.value = '';
+        TokenService.saveAuthToken(res.authToken);
+        this.handleLoginSuccess(res.payload);
+      })
+      .catch(res => {
+        this.setState({ error: res.error });
+      });
+  };
 
   render() {
     const { error } = this.state;
