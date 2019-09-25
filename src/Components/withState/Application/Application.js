@@ -4,6 +4,7 @@ import ScrollToTopOnMount from '../../withoutState/ScrollToTopOnMount/ScrollToTo
 import UserContext from '../../../context';
 import AuthApiService from '../../../services/auth-api-service';
 import TokenService from '../../../services/token-service';
+import ApplicationApiService from '../../../services/application-api-service';
 import './Application.css';
 
 export default function Application(props) {
@@ -72,7 +73,7 @@ export default function Application(props) {
     const { name, email, phone, message } = ev.target;
 
     setError(null);
-    AuthApiService.postApplication({
+    ApplicationApiService.postApplication({
       name: name.value,
       email: email.value,
       phone: phone.value,
