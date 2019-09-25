@@ -16,6 +16,9 @@ export default function Application(props) {
 
   useEffect(() => {
     document.title = 'Apply | Terre Lee';
+    return () => {
+      document.title = 'Terre Lee Violin';
+    };
   });
 
   function handleNameChange(e) {

@@ -9,6 +9,9 @@ import './Lessons.css';
 export default function Lessons(props) {
   useEffect(() => {
     document.title = 'Lessons | Terre Lee';
+    return () => {
+      document.title = 'Terre Lee Violin';
+    };
   });
 
   return (

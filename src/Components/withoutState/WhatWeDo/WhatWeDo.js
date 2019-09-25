@@ -11,6 +11,9 @@ import './WhatWeDo.css';
 export default function WhatWeDo(props) {
   useEffect(() => {
     document.title = 'What We Do | Terre Lee';
+    return () => {
+      document.title = 'Terre Lee Violin';
+    };
   });
 
   return (

@@ -64,8 +64,7 @@ export default function Nav(props) {
       document.removeEventListener('mousedown', handleOutsideClick);
       document.removeEventListener('touchstart', handleOutsideClick);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  });
 
   function imageByLocation() {
     if (props.location.pathname === '/') {

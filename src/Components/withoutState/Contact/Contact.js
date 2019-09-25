@@ -9,6 +9,9 @@ import './Contact.css';
 export default function Contact() {
   useEffect(() => {
     document.title = 'Contact | Terre Lee';
+    return () => {
+      document.title = 'Terre Lee Violin';
+    };
   });
 
   return (

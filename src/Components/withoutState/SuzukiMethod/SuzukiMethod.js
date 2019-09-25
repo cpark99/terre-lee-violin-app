@@ -9,6 +9,9 @@ import './SuzukiMethod.css';
 export default function SuzukiMethod(props) {
   useEffect(() => {
     document.title = 'Suzuki Method | Terre Lee';
+    return () => {
+      document.title = 'Terre Lee Violin';
+    };
   });
 
   return (

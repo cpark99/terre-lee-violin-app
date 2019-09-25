@@ -9,6 +9,9 @@ import './PrivateEvents.css';
 export default function PrivateEvents(props) {
   useEffect(() => {
     document.title = 'Private Events | Terre Lee';
+    return () => {
+      document.title = 'Terre Lee Violin';
+    };
   });
 
   return (
