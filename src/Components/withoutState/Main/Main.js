@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import springOne from '../../img/EB2019-SpringRecital-8443.jpg';
-import springTwo from '../../img/violinpiano.jpg';
+import springOne from '../../../img/EB2019-SpringRecital-8443.jpg';
+import springTwo from '../../../img/violinpiano.jpg';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import './Main.css';
 

@@ -33,7 +33,7 @@
 
 #suzuki-image {
   height: 49vh;
-  background: url('../../img/Suzuki.jpg');
+  background: url('../../../img/Suzuki.jpg');
   background-position: center;
   background-size: cover;
   margin-top: 16px;

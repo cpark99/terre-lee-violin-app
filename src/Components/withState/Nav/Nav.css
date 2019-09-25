@@ -44,19 +44,19 @@ header a:hover,
 }
 
 .main-nav {
-  background: url('../../img/landing-cover.png');
+  background: url('../../../img/landing-cover.png');
 }
 
 .what-we-do-nav {
-  background: url('../../img/IMG_2566.jpg');
+  background: url('../../../img/IMG_2566.jpg');
 }
 
 .lessons-nav {
-  background: url('../../img/EB2019-SpringRecital-9027.jpg');
+  background: url('../../../img/EB2019-SpringRecital-9027.jpg');
 }
 
 .new-students-nav {
-  background: url('../../img/EB2019-SpringRecital-8881.jpg');
+  background: url('../../../img/EB2019-SpringRecital-8881.jpg');
 }
 
 .nav-image {

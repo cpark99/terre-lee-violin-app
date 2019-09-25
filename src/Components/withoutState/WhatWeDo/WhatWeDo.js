@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
-import studentOne from '../../img/IMG_E2975.jpg';
-import studentTwo from '../../img/EB2019-SpringRecital-8775.jpg';
-import studentThree from '../../img/EB2019-SpringRecital-8716.jpg';
+import studentOne from '../../../img/IMG_E2975.jpg';
+import studentTwo from '../../../img/EB2019-SpringRecital-8775.jpg';
+import studentThree from '../../../img/EB2019-SpringRecital-8716.jpg';
 import StudioDropdown from '../../withState/StudioDropdown/StudioDropdown';
 import { Breakpoint } from 'react-socks';
 import StudioDropdownList from '../StudioDropdownList/StudioDropdownList';
@@ -20,7 +20,11 @@ export default function WhatWeDo(props) {
         <StudioDropdown location={props.location} />
       </Breakpoint>
       <Breakpoint smallMed up>
-        <div id="studio-menu-desktop" className="page-menu-desktop">
+        <div
+          id="studio-menu-desktop"
+          className={`page-menu-desktop ${props.location.pathname === '/what-we-do' &&
+            'what-we-do-sidebar'}`}
+        >
           <h2>Teaching Studio</h2>
           <StudioDropdownList location={props.location} />
         </div>

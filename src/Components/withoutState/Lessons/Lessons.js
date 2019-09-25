@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
-import lessonTwo from '../../img/EB2019-SpringRecital-8700.jpg';
+import lessonTwo from '../../../img/EB2019-SpringRecital-8700.jpg';
 import StudioDropdown from '../../withState/StudioDropdown/StudioDropdown';
 import { Breakpoint } from 'react-socks';
 import StudioDropdownList from '../StudioDropdownList/StudioDropdownList';

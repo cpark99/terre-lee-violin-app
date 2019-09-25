@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
-import weddingViolinist from '../../img/Wedding+VIolinist.jpg';
+import weddingViolinist from '../../../img/Wedding+VIolinist.jpg';
 import { Breakpoint } from 'react-socks';
 import BookingsDropdownList from '../BookingsDropdownList/BookingsDropdownList';
 import './PrivateEvents.css';
