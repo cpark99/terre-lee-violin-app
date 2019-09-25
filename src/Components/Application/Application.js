@@ -64,11 +64,7 @@ export default function Application(props) {
   }
 
   function handleRegistrationSuccess() {
-    if (props.history.location.pathname === '/life-insurance-calc') {
-      return props.history.push('/login');
-    } else {
-      return props.history.push('/login');
-    }
+    return props.history.push('/success');
   }
 
   function handleSubmit(ev) {

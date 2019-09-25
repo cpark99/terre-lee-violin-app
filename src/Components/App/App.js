@@ -22,6 +22,7 @@ import './App.css';
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import PrivateRoute from '../Utils/PrivateRoute';
 import NotFound from '../NotFound/NotFound';
+import ApplicationSuccess from '../ApplicationSuccess/ApplicationSuccess';
 
 class App extends React.Component {
   state = {
@@ -149,6 +150,7 @@ class App extends React.Component {
               <Route exact path="/apply" component={Application} />
               <PublicOnlyRoute exact path="/login" component={Login} />
               <PrivateRoute exact path="/profile" component={Profile} />
+              <Route exact path="/success" component={ApplicationSuccess} />
               <Route component={NotFound} />
             </Switch>
             <Footer />
