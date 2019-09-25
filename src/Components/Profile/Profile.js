@@ -32,41 +32,43 @@ export default class Profile extends Component {
         );
     }
     return (
-      <section id="profile">
-        <ScrollToTopOnMount />
+      <React.Fragment>
         {content}
-        <div id="profile-information" className="flex-column-center">
-          <h1>PROFILE</h1>
-          <div id="profile-name-container" className="profile-info-container">
-            <h4>Name:</h4>
-            <p>{user.name}</p>
+        <section id="profile">
+          <ScrollToTopOnMount />
+          <div id="profile-information" className="flex-column-center">
+            <h1>PROFILE</h1>
+            <div id="profile-name-container" className="profile-info-container">
+              <h4>Name:</h4>
+              <p>{user.name}</p>
+            </div>
+            <div id="profile-lessons-container" className="profile-info-container">
+              <h4>Next Lesson:</h4>
+              <p id="profile-lesson-date">{user.next_lesson}</p>
+            </div>
+            <div id="profile-amount-due-container" className="profile-info-container">
+              <h4>Amount Due:</h4>
+              <p id="profile-amount-due">${user.amount_due}</p>
+            </div>
           </div>
-          <div id="profile-lessons-container" className="profile-info-container">
-            <h4>Next Lesson:</h4>
-            <p id="profile-lesson-date">{user.next_lesson}</p>
+          <div id="reschedule-section" className="main-sub-section flex-column-center">
+            <div id="profile-reschedule" className="flex-column-center">
+              <h2 className="profile-section-header">RESCHEDULE LESSON</h2>
+              <a
+                href="https://calendly.com/cpwebdeveloper99/reschedule?month=2019-09"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button id="to-reschedule-button">Click to reschedule</button>
+              </a>
+            </div>
+            <p className="question-text">
+              <span className="italic">Questions or concerns?</span>{' '}
+              <NavLink to="/contact">&nbsp;Contact me</NavLink>
+            </p>
           </div>
-          <div id="profile-amount-due-container" className="profile-info-container">
-            <h4>Amount Due:</h4>
-            <p id="profile-amount-due">${user.amount_due}</p>
-          </div>
-        </div>
-        <div id="reschedule-section" className="main-sub-section flex-column-center">
-          <div id="profile-reschedule" className="flex-column-center">
-            <h2 className="profile-section-header">RESCHEDULE LESSON</h2>
-            <a
-              href="https://calendly.com/cpwebdeveloper99/reschedule?month=2019-09"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button id="to-reschedule-button">Click to reschedule</button>
-            </a>
-          </div>
-          <p className="question-text">
-            <span className="italic">Questions or concerns?</span>{' '}
-            <NavLink to="/contact">&nbsp;Contact me</NavLink>
-          </p>
-        </div>
-      </section>
+        </section>
+      </React.Fragment>
     );
   }
 }

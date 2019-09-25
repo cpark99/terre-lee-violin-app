@@ -69,7 +69,9 @@ export default class Login extends Component {
             <label htmlFor="password">Password:</label>
             <input type="password" name="password" id="password" required />
           </div>
-          <button id="login-form-button">LOGIN</button>
+          <button id="login-form-button" type="submit">
+            LOGIN
+          </button>
         </form>
         <p>
           New student? <NavLink to={'/apply'}>Apply</NavLink> here

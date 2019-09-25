@@ -63,6 +63,33 @@ export default function Application(props) {
       });
   }
 
+  function handleRegistrationSuccess() {
+    if (props.history.location.pathname === '/life-insurance-calc') {
+      return props.history.push('/login');
+    } else {
+      return props.history.push('/login');
+    }
+  }
+
+  function handleSubmit(ev) {
+    ev.preventDefault();
+    const { name, email, phone, message } = ev.target;
+
+    setError(null);
+    AuthApiService.postApplication({
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      message: message.value
+    })
+      .then(user => {
+        handleRegistrationSuccess();
+      })
+      .catch(res => {
+        this.setState({ error: res.error });
+      });
+  }
+
   return (
     <section id="application" className="container form-page-container">
       <ScrollToTopOnMount />
@@ -74,7 +101,7 @@ export default function Application(props) {
         Interested? <NavLink to="/new-students">Click to learn more</NavLink>
       </p>
       <div role="alert">{error && <p className="red-font">{error}</p>}</div>
-      <form id="application-form" className="flex-column-center form-page">
+      <form id="application-form" className="flex-column-center form-page" onSubmit={handleSubmit}>
         <div className="form-field">
           <label htmlFor="name">Full Name *</label>
           <input
