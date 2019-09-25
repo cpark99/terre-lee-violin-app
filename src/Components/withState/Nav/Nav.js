@@ -207,7 +207,7 @@ export default function Nav(props) {
               </NavLink>
               <NavLink to="/contact" onClick={handleClose}>
                 <button id="nav-menu-contact-button" className="">
-                  <h5 id="contact-nav-button">CONTACT</h5>
+                  <h5 id="contact-nav-button-desktop">CONTACT</h5>
                 </button>
               </NavLink>
             </div>
