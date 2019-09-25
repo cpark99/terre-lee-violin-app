@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Terre Lee Violin
 
-## Available Scripts
+### Live: [Link](https://terreleeviolin.netlify.com/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+### Summary:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Terre Lee Violin is a modern way to help manage a violin school. This app enables prospective students to apply to the school, while current students are able to see their lesson schedule, remaining balance due, and reschedule lessons. Users can also find information about booking private events. While utilizing a responsive, mobile-first design, users can stay updated and remain connected with Terre Lee and her violin school.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+### Motivation:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To many professionals, making a brand for yourself and starting a business is an arduous task. Even with a skill or product to provide, a strong online presence is necessary to stay afloat. Terre Lee Violin establishes a violin school's online presence, by adding custom functionality for generating and managing students. By using modern techonologies and designs, this app aims to enhance user experience, while providing a simple management system for students.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### API Documentation: [Link](https://github.com/cpark99/terre-lee-violin-api/blob/master/README.md)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Technologies Used:
 
-### `npm run eject`
+- JavaScript
+- React
+- Node.js
+- Express.js
+- PostgreSQL
+- CSS3
+- HTML5
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Screenshots:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### Desktop:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Desktop Screenshot](https://raw.githubusercontent.com/cpark99/terre-lee-violin-app/master/src/img/screenshots/violin-desktop-screenshot.png)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##### Tablet:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Tablet Screenshot](https://raw.githubusercontent.com/cpark99/terre-lee-violin-app/master/src/img/screenshots/violin-tablet-screenshot.png)
 
-### Code Splitting
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+##### Mobile:
 
-### Analyzing the Bundle Size
+![Mobile Screenshot](https://raw.githubusercontent.com/cpark99/terre-lee-violin-app/master/src/img/screenshots/violin-mobile-screenshot.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+---
