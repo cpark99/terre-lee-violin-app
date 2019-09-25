@@ -180,6 +180,13 @@ export default function Nav(props) {
                     </div>
                   )}
                 </li>
+                {TokenService.hasAuthToken() && (
+                  <li className="nav-menu-item">
+                    <NavLink to="/profile" onClick={handleClose}>
+                      <h5>PROFILE</h5>
+                    </NavLink>
+                  </li>
+                )}
                 <li className="nav-menu-item">
                   {TokenService.hasAuthToken() ? (
                     <NavLink to="/" onClick={handleLogoutClick}>

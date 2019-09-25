@@ -40,6 +40,16 @@
   margin-bottom: 10px;
 }
 
+#new-students-information {
+  display: flex;
+  flex-direction: column;
+}
+
+#new-students-information blockquote,
+#new-students-information .blockquote-quote {
+  align-self: center;
+}
+
 .bold {
   font-weight: bold;
 }

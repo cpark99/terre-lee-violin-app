@@ -19,6 +19,9 @@ import TokenService from '../../services/token-service';
 import AuthApiService from '../../services/auth-api-service';
 import UserApiService from '../../services/user-api-service';
 import './App.css';
+import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
+import PrivateRoute from '../Utils/PrivateRoute';
+import NotFound from '../NotFound/NotFound';
 
 class App extends React.Component {
   state = {
@@ -144,8 +147,9 @@ class App extends React.Component {
               <Route exact path="/suzuki" component={SuzukiMethod} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/apply" component={Application} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/profile" component={Profile} />
+              <PublicOnlyRoute exact path="/login" component={Login} />
+              <PrivateRoute exact path="/profile" component={Profile} />
+              <Route component={NotFound} />
             </Switch>
             <Footer />
           </UserContext.Provider>

@@ -1,3 +1,7 @@
+#main-body {
+  transition: 0.4s;
+}
+
 #sidebar-nav {
   position: fixed;
   top: 0;
@@ -10,7 +14,7 @@
   background-color: #212121;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  transition: height 0s 0.14s linear, visibility 0s 0s linear;
+  transition: 0.4s;
 }
 
 .flex-column-center-center {

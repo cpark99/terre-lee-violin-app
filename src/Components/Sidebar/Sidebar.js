@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import TokenService from '../../services/token-service';
+import UserContext, { nullUser } from '../../context';
 import './Sidebar.css';
 
 export default function Sidebar(props) {
@@ -30,6 +32,14 @@ export default function Sidebar(props) {
     props.closeNavMenu();
   }
 
+  const context = useContext(UserContext);
+
+  function handleLogoutClick() {
+    TokenService.clearAuthToken();
+    context.user = nullUser;
+    handleClose();
+  }
+
   return (
     <section id="sidebar-nav-menu">
       <div id="nav-header">
@@ -37,9 +47,15 @@ export default function Sidebar(props) {
           <h5>TERRE LEE</h5>
         </NavLink>
         <p>
-          <NavLink to="/login" onClick={handleClose}>
-            LOGIN
-          </NavLink>
+          {TokenService.hasAuthToken() ? (
+            <NavLink to="/" onClick={handleLogoutClick}>
+              LOGOUT
+            </NavLink>
+          ) : (
+            <NavLink to="/login" onClick={handleClose}>
+              LOGIN
+            </NavLink>
+          )}
         </p>
       </div>
       <h5 id="bookings-menu" onClick={toggleBookingsMenu}>
@@ -80,6 +96,13 @@ export default function Sidebar(props) {
             </NavLink>
           </li>
         </ul>
+      )}
+      {TokenService.hasAuthToken() && (
+        <h5 id="profile-menu">
+          <NavLink to="/profile" onClick={handleClose}>
+            <h5>PROFILE</h5>
+          </NavLink>
+        </h5>
       )}
       <NavLink to="/apply" onClick={handleClose}>
         <button id="nav-menu-apply-button" onClick={handleClose}>
