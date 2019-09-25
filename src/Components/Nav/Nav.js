@@ -104,6 +104,8 @@ export default function Nav(props) {
       props.location.pathname === '/profile'
     ) {
       return 'nav-dropdown-desktop-small gray-container';
+    } else if (props.location.pathname === '/success') {
+      return 'nav-dropdown-desktop-small gray-container';
     } else if (props.location.pathname === '/lessons') {
       return 'nav-dropdown-desktop nav-lessons-dropdown-landscape gray-container';
     } else {
