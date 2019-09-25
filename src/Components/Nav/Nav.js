@@ -1,8 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useHover } from 'use-events';
-import UserContext from '../../context';
+import UserContext, { nullUser } from '../../context';
 import { Breakpoint } from 'react-socks';
+import TokenService from '../../services/token-service';
 import './Nav.css';
 
 export default function Nav(props) {
@@ -105,6 +106,14 @@ export default function Nav(props) {
     }
   }
 
+  const context = useContext(UserContext);
+
+  function handleLogoutClick() {
+    TokenService.clearAuthToken();
+    context.user = nullUser;
+    handleClose();
+  }
+
   return (
     <nav className={imageByLocation()}>
       <div id="nav-container">
@@ -167,9 +176,15 @@ export default function Nav(props) {
                   )}
                 </li>
                 <li className="nav-menu-item">
-                  <NavLink to="/login" onClick={handleClose}>
-                    <h5>LOGIN</h5>
-                  </NavLink>
+                  {TokenService.hasAuthToken() ? (
+                    <NavLink to="/" onClick={handleLogoutClick}>
+                      <h5>LOGOUT</h5>
+                    </NavLink>
+                  ) : (
+                    <NavLink to="/login" onClick={handleClose}>
+                      <h5>LOGIN</h5>
+                    </NavLink>
+                  )}
                 </li>
               </ul>
               <NavLink to="/apply" onClick={handleClose}>

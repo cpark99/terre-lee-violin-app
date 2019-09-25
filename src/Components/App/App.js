@@ -39,7 +39,9 @@ class App extends React.Component {
     document.addEventListener('touchstart', this.handleOutsideClick, false);
 
     if (TokenService.hasAuthToken()) {
+      // ** NEED TO FIX **
       AuthApiService.getUserId().then(res => {
+        console.log('res: ' + res);
         UserApiService.getUser(res.id)
           .then(this.setUser)
           .then(this.getUserId)
@@ -101,8 +103,6 @@ class App extends React.Component {
     this.setState({ user_id: user_id });
   };
 
-  updateUser = () => {};
-
   render() {
     const value = {
       user: this.state.user,
@@ -113,7 +113,6 @@ class App extends React.Component {
       setUser: this.setUser,
       clearUser: this.clearUser,
       setUserId: this.setUserId,
-      updateUser: this.updateUser,
       toggleSidebarNav: this.toggleSidebarNav
     };
     setDefaultBreakpoints([
