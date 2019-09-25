@@ -36,6 +36,10 @@
   #profile {
     padding-top: 20px;
   }
+
+  .profile-section-header {
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 375px) and (min-height: 812px) {
