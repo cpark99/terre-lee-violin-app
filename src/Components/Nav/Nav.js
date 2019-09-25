@@ -45,14 +45,16 @@ export default function Nav(props) {
   }
 
   function handleOutsideClick(e) {
-    if (bookingsRef.current.contains(e.target)) {
-      return;
+    if (bookingsRef.current) {
+      if (bookingsRef.current.contains(e.target)) {
+        return;
+      }
+      if (studioRef.current.contains(e.target)) {
+        return;
+      }
+      // outside
+      handleClose();
     }
-    if (studioRef.current.contains(e.target)) {
-      return;
-    }
-    // outside
-    handleClose();
   }
 
   useEffect(() => {
@@ -97,7 +99,10 @@ export default function Nav(props) {
       return 'nav-dropdown-desktop-small gray-container';
     } else if (props.location.pathname === '/apply' || props.location.pathname === '/suzuki') {
       return 'nav-dropdown-desktop-small gray-container';
-    } else if (props.location.pathname === '/private-events') {
+    } else if (
+      props.location.pathname === '/private-events' ||
+      props.location.pathname === '/profile'
+    ) {
       return 'nav-dropdown-desktop-small gray-container';
     } else if (props.location.pathname === '/lessons') {
       return 'nav-dropdown-desktop nav-lessons-dropdown-landscape gray-container';
@@ -121,7 +126,7 @@ export default function Nav(props) {
           <NavLink to="/" onClick={handleClose}>
             <h3>TERRE LEE</h3>
           </NavLink>
-          <Breakpoint medium down>
+          <Breakpoint medLarge down>
             <UserContext.Consumer>
               {value => (
                 <div
@@ -138,7 +143,7 @@ export default function Nav(props) {
               )}
             </UserContext.Consumer>
           </Breakpoint>
-          <Breakpoint medLarge up>
+          <Breakpoint large up>
             <div id="nav-menu-desktop-container">
               <ul id="nav-menu-desktop">
                 <li className="nav-menu-item">

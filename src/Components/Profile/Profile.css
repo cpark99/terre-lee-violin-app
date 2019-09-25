@@ -32,9 +32,21 @@
   text-align: center;
 }
 
+@media (min-width: 375px) {
+  #profile {
+    padding-top: 20px;
+  }
+}
+
 @media (min-width: 375px) and (min-height: 812px) {
   #profile {
     padding-top: 60px;
+  }
+}
+
+@media (min-width: 414px) {
+  #profile {
+    padding-top: 30px;
   }
 }
 
@@ -55,6 +67,12 @@
 @media (min-width: 768px) {
   #profile {
     padding-top: 90px;
+  }
+}
+
+@media (min-width: 812px) and (max-height: 375px) {
+  #profile {
+    padding-top: 20px;
   }
 }
 

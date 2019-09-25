@@ -218,11 +218,6 @@ header a:hover,
     padding: 0;
   }
 
-  #nav-menu-contact-button,
-  .nav-menu-item {
-    margin-left: 20px;
-  }
-
   #nav-menu-apply-button h5 {
     margin: 0;
   }
@@ -259,6 +254,10 @@ header a:hover,
 
   .main-header {
     bottom: 30px;
+  }
+
+  .nav-menu-item {
+    margin-left: 20px;
   }
 
   .nav-menu-item h5:hover {
@@ -323,6 +322,12 @@ header a:hover,
 
   .nav-lessons-dropdown-landscape {
     top: 89px;
+  }
+}
+
+@media (min-width: 992px) {
+  #nav-menu-contact-button {
+    margin-left: 20px;
   }
 }
 

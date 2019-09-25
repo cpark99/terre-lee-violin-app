@@ -14,10 +14,11 @@ export default class Profile extends Component {
 
   componentDidMount() {
     this.context.clearError();
-    console.log(this.context);
-    UserApiService.getUser(this.context.user_id)
-      .then(this.context.setUser)
-      .catch(this.context.setError);
+    if (this.context.user_id) {
+      UserApiService.getUser(this.context.user_id)
+        .then(this.context.setUser)
+        .catch(this.context.setError);
+    }
   }
 
   render() {

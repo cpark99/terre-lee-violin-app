@@ -21,7 +21,6 @@ const AuthApiService = {
     }).then(res => (!res.ok ? res.json().then(e => Promise.reject(e)) : res.json()));
   },
   getUserId() {
-    console.log('getUserId');
     return fetch(`${config.API_ENDPOINT}/auth`, {
       headers: {
         authorization: `bearer ${TokenService.getAuthToken()}`,

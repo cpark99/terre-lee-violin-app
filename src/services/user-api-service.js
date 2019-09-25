@@ -3,9 +3,7 @@ import TokenService from './token-service';
 
 const UserApiService = {
   getUser(userId) {
-    console.log('userId: ' + userId);
-    // ** NEED TO FIX **
-    return fetch(`${config.API_ENDPOINT}/users/1`, {
+    return fetch(`${config.API_ENDPOINT}/users/${userId}`, {
       headers: {
         authorization: `bearer ${TokenService.getAuthToken()}`
       }

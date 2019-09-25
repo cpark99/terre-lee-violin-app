@@ -94,7 +94,7 @@ export default function Application(props) {
     <section id="application" className="container form-page-container">
       <ScrollToTopOnMount />
       <h1 className="page-title">APPLY NOW</h1>
-      <button onClick={handleDemoLogin} className="demo-login-button orange-button">
+      <button onClick={handleDemoLogin} className="demo-login-button black-button">
         Demo
       </button>
       <p>

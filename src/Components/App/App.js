@@ -39,9 +39,7 @@ class App extends React.Component {
     document.addEventListener('touchstart', this.handleOutsideClick, false);
 
     if (TokenService.hasAuthToken()) {
-      // ** NEED TO FIX **
       AuthApiService.getUserId().then(res => {
-        console.log('res: ' + res);
         UserApiService.getUser(res.id)
           .then(this.setUser)
           .then(this.getUserId)

@@ -22,6 +22,10 @@ export default class Login extends Component {
     document.title = 'Student Login | Terre Lee';
   }
 
+  componentWillUnmount() {
+    document.title = 'Terre Lee Violin';
+  }
+
   handleLoginSuccess = payload => {
     const { location, history } = this.props;
     const destination = (location.state || {}).from || '/profile';
