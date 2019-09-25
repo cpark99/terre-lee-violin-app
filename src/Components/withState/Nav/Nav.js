@@ -123,7 +123,7 @@ export default function Nav(props) {
   return (
     <nav className={imageByLocation()}>
       <div id="nav-container">
-        <header id="header" className={headerByLocation()}>
+        <header id="header" className={headerByLocation()} role="banner">
           <NavLink to="/" onClick={handleClose}>
             <h3>TERRE LEE</h3>
           </NavLink>
