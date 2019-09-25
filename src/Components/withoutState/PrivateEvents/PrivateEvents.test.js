@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import ApplicationSuccess from './ApplicationSuccess';
+import PrivateEvents from './PrivateEvents';
+
+window.scrollTo = jest.fn();
 
 it('renders without crashing', () => {
+  const props = {
+    location: {
+      pathname: '/'
+    }
+  };
   const div = document.createElement('div');
+  window.scrollTo.mockClear();
+
   ReactDOM.render(
     <BrowserRouter>
-      <ApplicationSuccess />
+      <PrivateEvents {...props} />
     </BrowserRouter>,
     div
   );

@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import ApplicationSuccess from './ApplicationSuccess';
+import BookingsDropdownList from './BookingsDropdownList';
 
 it('renders without crashing', () => {
+  const props = {
+    location: {
+      pathname: '/'
+    }
+  };
   const div = document.createElement('div');
   ReactDOM.render(
     <BrowserRouter>
-      <ApplicationSuccess />
+      <BookingsDropdownList {...props} />
     </BrowserRouter>,
     div
   );
