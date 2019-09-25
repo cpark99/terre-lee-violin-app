@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import TokenService from '../../services/token-service';
-import UserContext, { nullUser } from '../../context';
+import TokenService from '../../../services/token-service';
+import UserContext, { nullUser } from '../../../context';
 import './Sidebar.css';
 
 export default function Sidebar(props) {

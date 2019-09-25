@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
-import UserContext, { nullUser } from '../../context';
-import UserApiService from '../../services/user-api-service';
+import ScrollToTopOnMount from '../../withoutState/ScrollToTopOnMount/ScrollToTopOnMount';
+import UserContext, { nullUser } from '../../../context';
+import UserApiService from '../../../services/user-api-service';
 import './Profile.css';
 
 export default class Profile extends Component {

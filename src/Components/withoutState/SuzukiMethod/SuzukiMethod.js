@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
-import StudioDropdown from '../StudioDropdown/StudioDropdown';
+import StudioDropdown from '../../withState/StudioDropdown/StudioDropdown';
 import { Breakpoint } from 'react-socks';
 import StudioDropdownList from '../StudioDropdownList/StudioDropdownList';
 import './SuzukiMethod.css';

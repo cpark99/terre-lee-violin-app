@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
-import TokenService from '../../services/token-service';
-import AuthApiService from '../../services/auth-api-service';
-import UserContext from '../../context';
+import ScrollToTopOnMount from '../../withoutState/ScrollToTopOnMount/ScrollToTopOnMount';
+import TokenService from '../../../services/token-service';
+import AuthApiService from '../../../services/auth-api-service';
+import UserContext from '../../../context';
 import './Login.css';
 
 export default class Login extends Component {

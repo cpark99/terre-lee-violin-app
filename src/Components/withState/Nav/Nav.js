@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useHover } from 'use-events';
-import UserContext, { nullUser } from '../../context';
+import UserContext, { nullUser } from '../../../context';
 import { Breakpoint } from 'react-socks';
-import TokenService from '../../services/token-service';
+import TokenService from '../../../services/token-service';
 import './Nav.css';
 
 export default function Nav(props) {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
+import ScrollToTopOnMount from '../withoutState/ScrollToTopOnMount/ScrollToTopOnMount';
 import UserContext from '../../context';
 import AuthApiService from '../../services/auth-api-service';
 import TokenService from '../../services/token-service';

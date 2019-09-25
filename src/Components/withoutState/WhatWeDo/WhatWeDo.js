@@ -3,7 +3,7 @@ import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import studentOne from '../../img/IMG_E2975.jpg';
 import studentTwo from '../../img/EB2019-SpringRecital-8775.jpg';
 import studentThree from '../../img/EB2019-SpringRecital-8716.jpg';
-import StudioDropdown from '../StudioDropdown/StudioDropdown';
+import StudioDropdown from '../../withState/StudioDropdown/StudioDropdown';
 import { Breakpoint } from 'react-socks';
 import StudioDropdownList from '../StudioDropdownList/StudioDropdownList';
 import './WhatWeDo.css';
