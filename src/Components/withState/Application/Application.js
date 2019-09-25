@@ -86,7 +86,7 @@ export default function Application(props) {
         handleRegistrationSuccess();
       })
       .catch(res => {
-        this.setState({ error: res.error });
+        setError(res.error);
       });
   }
 
@@ -132,7 +132,8 @@ export default function Application(props) {
             type="tel"
             name="phone"
             id="phone"
-            placeholder="888-888-8888"
+            placeholder="XXXXXXXXXX"
+            pattern="[0-9]{10}"
             required
             value={phone}
             onChange={handlePhoneChange}
