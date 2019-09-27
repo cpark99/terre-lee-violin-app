@@ -25,18 +25,18 @@ export default function Main() {
           A professional free lance violinist, Terre also plays for symphonies,{' '}
           <NavLink to="/private-events">private events</NavLink>, recordings, and more.
         </p>
-        <p>
+        <p id="apply-information-text">
           As a violin student, you have access to both private and group{' '}
           <NavLink to="/lessons">lessons</NavLink>, and online access to view and reschedule
           lessons, as well as any balance due.
         </p>
-        <p id="apply-information-text" className="centered-text">
-          Interested? Currently accepting <NavLink to="/new-students">new student</NavLink>{' '}
-          applications!
-        </p>
         <NavLink to="/apply">
           <button>Apply Now</button>
         </NavLink>
+        <p id="apply-information-sub-text" className="centered-text">
+          Interested? Currently accepting <NavLink to="/new-students">new student</NavLink>{' '}
+          applications!
+        </p>
         <div className="flex-responsive-landscape-main">
           <div id="teaching-studio" className="main-sub-section flex-column-center-center">
             <img

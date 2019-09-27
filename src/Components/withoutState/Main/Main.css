@@ -55,7 +55,7 @@ a:hover {
 }
 
 #introduction button {
-  margin: 20px 0 30px 0;
+  margin: 20px 0 20px 0;
 }
 
 #teaching-studio p,
@@ -68,9 +68,12 @@ a:hover {
 }
 
 #apply-information-text {
-  text-align: center;
-  margin-top: 20px;
   margin-bottom: 0;
+}
+
+#apply-information-sub-text {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -94,6 +97,10 @@ a:hover {
   text-align: center;
 }
 
+.centered-text {
+  text-align: center;
+}
+
 @media (min-width: 667px) {
   section {
     padding-bottom: 12px;
@@ -104,7 +111,7 @@ a:hover {
   }
 
   #introduction button {
-    margin: 25px 0 45px 0;
+    margin-top: 25px;
   }
 
   .container {
@@ -143,5 +150,9 @@ a:hover {
 
   section p {
     width: 630px;
+  }
+
+  #introduction h1 {
+    margin-top: 50px;
   }
 }
