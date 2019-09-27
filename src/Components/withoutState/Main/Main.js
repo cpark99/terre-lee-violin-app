@@ -71,7 +71,7 @@ export default function Main(props) {
         <p id="apply-information-sub-text" className="centered-text">
           Check out the{' '}
           <button onClick={handleDemoLogin} className="demo-login-button">
-            Demo
+            DEMO
           </button>
           ! Currently accepting <NavLink to="/new-students">new student</NavLink> applications!
         </p>

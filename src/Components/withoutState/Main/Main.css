@@ -101,6 +101,19 @@ a:hover {
   text-align: center;
 }
 
+.demo-login-button {
+  background: none;
+  color: #3d9991;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.demo-login-button:hover {
+  color: #70e2d9;
+}
+
 @media (min-width: 667px) {
   section {
     padding-bottom: 12px;
@@ -133,15 +146,6 @@ a:hover {
 
   .main-sub-section {
     width: 45%;
-  }
-
-  .demo-login-button {
-    background: none;
-    color: #3d9991;
-    border: none;
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
   }
 }
 
