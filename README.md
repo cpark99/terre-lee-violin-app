@@ -12,7 +12,7 @@ Terre Lee Violin is a modern way to help manage a violin school. This app enable
 
 ### Motivation:
 
-To many professionals, making a brand for yourself and starting a business is an arduous task. Even with a skill or product to provide, a strong online presence is necessary to stay afloat. Terre Lee Violin establishes a violin school's online presence, by adding custom functionality for generating and managing students. By using modern techonologies and designs, this app aims to enhance user experience, while providing a simple management system for students.
+Too many professionals, making a brand for yourself and starting a business is an arduous task. Even with a skill or product to provide, a strong online presence is necessary to stay afloat. Terre Lee Violin establishes a violin school's online presence, by adding custom functionality for generating and managing students. By using modern techonologies and designs, this app aims to enhance user experience, while providing a simple management system for students.
 
 ---
 
