@@ -22,8 +22,12 @@ export default function Main() {
           studio in Santa Cruz, California.
         </p>
         <p>
-          A professional free lance violinist, Terre also plays for symphonies, private events,
-          recordings, and more.
+          A professional free lance violinist, Terre also plays for symphonies,{' '}
+          <NavLink to="/private-events">private events</NavLink>, recordings, and more.
+        </p>
+        <p id="apply-information-text" className="centered-text">
+          Interested in <NavLink to="/lessons">lessons</NavLink>? Currently accepting{' '}
+          <NavLink to="/new-students">new student</NavLink> applications!
         </p>
         <NavLink to="/apply">
           <button>Apply Now</button>
