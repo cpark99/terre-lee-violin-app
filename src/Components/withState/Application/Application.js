@@ -1,9 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import ScrollToTopOnMount from '../../withoutState/ScrollToTopOnMount/ScrollToTopOnMount';
-import UserContext from '../../../context';
-import AuthApiService from '../../../services/auth-api-service';
-import TokenService from '../../../services/token-service';
 import ApplicationApiService from '../../../services/application-api-service';
 import './Application.css';
 
@@ -37,36 +34,6 @@ export default function Application(props) {
     setMessage(e.target.value);
   }
 
-  const context = useContext(UserContext);
-
-  function handleLoginSuccess(payload) {
-    const { history } = props;
-    const destination = (props.history.location.state || {}).from || '/profile';
-    context.setUserId(payload.user_id);
-    history.push(destination);
-  }
-
-  function handleDemoLogin(ev) {
-    ev.preventDefault();
-    setError(null);
-    let email = 'violin@demo.com';
-    let password = 'password';
-
-    AuthApiService.postLogin({
-      email: email,
-      password: password
-    })
-      .then(res => {
-        email = '';
-        password = '';
-        TokenService.saveAuthToken(res.authToken);
-        handleLoginSuccess(res.payload);
-      })
-      .catch(res => {
-        setError(res.error);
-      });
-  }
-
   function handleRegistrationSuccess() {
     return props.history.push('/success');
   }
@@ -94,9 +61,6 @@ export default function Application(props) {
     <section id="application" className="container form-page-container">
       <ScrollToTopOnMount />
       <h1 className="page-title">APPLY NOW</h1>
-      <button onClick={handleDemoLogin} className="demo-login-button black-button">
-        Demo
-      </button>
       <p>
         Interested? <NavLink to="/new-students">Click to learn more</NavLink>
       </p>

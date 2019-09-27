@@ -54,7 +54,7 @@ a:hover {
   margin-bottom: 24px;
 }
 
-#introduction button {
+#introduction-apply-button {
   margin: 20px 0 20px 0;
 }
 
@@ -110,7 +110,7 @@ a:hover {
     width: 59vw;
   }
 
-  #introduction button {
+  #introduction-apply-button {
     margin-top: 25px;
   }
 
@@ -133,6 +133,15 @@ a:hover {
 
   .main-sub-section {
     width: 45%;
+  }
+
+  .demo-login-button {
+    background: none;
+    color: #3d9991;
+    border: none;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
   }
 }
 
