@@ -56,7 +56,7 @@ export default class Profile extends Component {
             <div id="profile-reschedule" className="flex-column-center">
               <h2 className="profile-section-header">RESCHEDULE LESSON</h2>
               <a
-                href="https://calendly.com/tleeviolin/15min"
+                href="https://calendly.com/tleeviolin/reschedule"
                 target="_blank"
                 rel="noopener noreferrer"
               >
