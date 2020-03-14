@@ -39,6 +39,14 @@ footer a:hover {
   font-style: italic;
 }
 
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 @media (min-width: 568px) {
   footer {
     padding-bottom: 30px;
