@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
+import emailjs from 'emailjs-com';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import phone from '../../../img/phone-navy.png';
 import email from '../../../img/email.png';
@@ -13,6 +14,56 @@ export default function Contact() {
       document.title = 'Terre Lee Violin';
     };
   });
+
+
+  const [fields, setFields] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+
+    setFields({
+      ...fields,
+      [name]: value,
+    });
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        event.target,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(
+        (result) => {
+          setFields({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          })
+
+        },
+        (error) => {
+          setFields({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          })
+
+        }
+      );
+  }
 
   return (
     <section id="contact" className="container flex-responsive-landscape">
@@ -59,25 +110,26 @@ export default function Contact() {
       <form
         id="email-form"
         className="flex-column-center"
-        action="mailto:cpwebdeveloper99@gmail.com?subject='Re: Violin (website) - contact email'"
         method="post"
         encType="text/plain"
+
+        onSubmit={handleSubmit}
       >
         <div className="form-field">
           <label htmlFor="name">Name *</label>
-          <input type="text" name="name" id="name" placeholder="Jane Doe" required />
+          <input type="text" name="name" id="name" value={fields.name} onChange={handleInputChange} placeholder="Jane Doe" required />
         </div>
         <div className="form-field">
           <label htmlFor="email">Email *</label>
-          <input type="email" name="email" id="email" placeholder="jdoe@gmail.com" required />
+          <input type="email" name="email" id="email" value={fields.email} onChange={handleInputChange} placeholder="jdoe@gmail.com" required />
         </div>
         <div className="form-field">
           <label htmlFor="subject">Subject *</label>
-          <input type="text" name="subject" id="subject" required />
+          <input type="text" name="subject" id="subject" value={fields.subject} onChange={handleInputChange} required />
         </div>
         <div className="form-field">
           <label htmlFor="message">Message *</label>
-          <textarea type="text" name="message" id="message" required />
+          <textarea type="text" name="message" id="message" value={fields.message} onChange={handleInputChange} required />
         </div>
         <button id="email-form-button" className="black-button">
           SUBMIT
