@@ -10,7 +10,7 @@ export default class Footer extends Component {
           <a href="#header">BACK TO TOP</a>
           <p className="no-margin-bottom">All Rights Reserved.</p>
           <p className="italic no-margin-top">
-            *This app was developed by <a href="https:realitiesatwork.com>RealitiesAtWork.com</a>
+            *This app was developed by <a href="https:realitiesatwork.com">RealitiesAtWork.com</a>
           </p>
         </footer>
       </React.Fragment>
