@@ -10,18 +10,18 @@ import Lessons from '../../withoutState/Lessons/Lessons';
 import NewStudents from '../../withoutState/NewStudents/NewStudents';
 import SuzukiMethod from '../../withoutState/SuzukiMethod/SuzukiMethod';
 import Contact from '../../withoutState/Contact/Contact';
-import Application from '../Application/Application';
-import Login from '../Login/Login';
-import Profile from '../Profile/Profile';
+// import Application from '../Application/Application';
+// import Login from '../Login/Login';
+// import Profile from '../Profile/Profile';
 import UserContext from '../../../context';
 import Sidebar from '../Sidebar/Sidebar';
 import TokenService from '../../../services/token-service';
 import AuthApiService from '../../../services/auth-api-service';
 import UserApiService from '../../../services/user-api-service';
-import PublicOnlyRoute from '../../withoutState/Utils/PublicOnlyRoute';
-import PrivateRoute from '../../withoutState/Utils/PrivateRoute';
+// import PublicOnlyRoute from '../../withoutState/Utils/PublicOnlyRoute';
+// import PrivateRoute from '../../withoutState/Utils/PrivateRoute';
 import NotFound from '../../withoutState/NotFound/NotFound';
-import ApplicationSuccess from '../../withoutState/ApplicationSuccess/ApplicationSuccess';
+// import ApplicationSuccess from '../../withoutState/ApplicationSuccess/ApplicationSuccess';
 import About from '../../withoutState/About/About';
 import Maintenance from '../../withoutState/Maintenance/Maintenance';
 import './App.css';
@@ -151,10 +151,10 @@ class App extends React.Component {
               <Route exact path="/new-students" component={NewStudents} />
               <Route exact path="/suzuki" component={SuzukiMethod} />
               <Route exact path="/contact" component={Contact} />
-              <Route exact path="/apply" component={Application} />
-              <PublicOnlyRoute exact path="/login" component={Login} />
-              <PrivateRoute exact path="/profile" component={Profile} />
-              <Route exact path="/success" component={ApplicationSuccess} />
+              {/* <Route exact path="/apply" component={Application} /> */}
+              {/* <PublicOnlyRoute exact path="/login" component={Login} /> */}
+              {/* <PrivateRoute exact path="/profile" component={Profile} /> */}
+              {/* <Route exact path="/success" component={ApplicationSuccess} /> */}
               <Route component={NotFound} />
             </Switch>
             <Footer />
