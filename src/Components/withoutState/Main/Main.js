@@ -68,7 +68,7 @@ export default function Main(props) {
           lessons, as well as any balance due.
         </p>
 				<a
-					href="https://www.instagram.com/terre.leee/"
+					href="https://www.instagram.com/terreleeviolin/"
 					className="social-link"
 					target="_blank"
 					rel="noopener noreferrer"
