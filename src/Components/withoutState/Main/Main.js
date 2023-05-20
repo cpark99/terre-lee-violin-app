@@ -7,6 +7,7 @@ import springOne from '../../../img/EB2019-SpringRecital-8443.jpg';
 import springTwo from '../../../img/violinpiano.jpg';
 import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import homeMainOne from '../../../img/terre-violin-5-19.jpg';
+import instagramGrey from '../../../img/instagram-grey.png';
 import './Main.css';
 
 export default function Main(props) {
@@ -66,6 +67,20 @@ export default function Main(props) {
           <NavLink to="/lessons">lessons</NavLink>, and online access to view and reschedule
           lessons, as well as any balance due.
         </p>
+				<a
+					href="https://www.instagram.com/terre.leee/"
+					className="social-link"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="open Instagram page"
+				>
+					<img
+						loading="lazy"
+						className="social-icon"
+						src={instagramGrey}
+						alt="Instagram icon"
+					/>@terre_leee
+				</a>
 				<img className='homepage-image centered' src={homeMainOne} alt="Terre playing violin on a beach" />
         <NavLink to="/apply">
           <button id="introduction-apply-button">Apply Now</button>
