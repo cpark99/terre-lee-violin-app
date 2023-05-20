@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollToTopOnMount from '../ScrollToTopOnMount/ScrollToTopOnMount';
 import homeMainOne from '../../../img/terre-violin-5-19.jpg';
 import './Maintenance.css';
 
@@ -7,6 +8,8 @@ export default class Maintenance extends Component {
     return (
       <React.Fragment>
         <section id="maintenance" className="container">
+					<ScrollToTopOnMount />
+					<header id="header"></header>
 					<h1>Thanks for coming to my page.</h1>
 					<h2>Website Coming soon!</h2>
 					<p>In the meantime, get in touch on Instagram (
