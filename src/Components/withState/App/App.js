@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { setDefaultBreakpoints } from 'react-socks';
-import Nav from '../Nav/Nav';
+// import Nav from '../Nav/Nav';
 import Main from '../../withoutState/Main/Main';
 import Footer from '../../withoutState/Footer/Footer';
 import PrivateEvents from '../../withoutState/PrivateEvents/PrivateEvents';
@@ -22,6 +22,8 @@ import PublicOnlyRoute from '../../withoutState/Utils/PublicOnlyRoute';
 import PrivateRoute from '../../withoutState/Utils/PrivateRoute';
 import NotFound from '../../withoutState/NotFound/NotFound';
 import ApplicationSuccess from '../../withoutState/ApplicationSuccess/ApplicationSuccess';
+import About from '../../withoutState/About/About';
+import Maintenance from '../../withoutState/Maintenance/Maintenance';
 import './App.css';
 
 class App extends React.Component {
@@ -135,12 +137,14 @@ class App extends React.Component {
           className={this.state.showNavMenu ? 'partial-main-body' : 'whole-main-body'}
         >
           <UserContext.Provider value={value}>
-            <Route
+            {/* <Route
               path="/"
               render={props => <Nav {...props} showNavMenu={this.state.showNavMenu} />}
-            />
+            /> */}
             <Switch>
-              <Route exact path="/" component={Main} />
+							<Route exact path="/" component={Maintenance} />
+							<Route exact path="/app" component={Main} />
+							<Route exact path="/about" component={About} />
               <Route exact path="/private-events" component={PrivateEvents} />
               <Route exact path="/what-we-do" component={WhatWeDo} />
               <Route exact path="/lessons" component={Lessons} />

@@ -152,6 +152,11 @@ export default function Nav(props) {
                     <h5>TERRE LEE</h5>
                   </NavLink>
                 </li>
+								<li className="nav-menu-item">
+                  <NavLink to="/about" onClick={handleClose}>
+                    <h5>ABOUT</h5>
+                  </NavLink>
+                </li>
                 <li {...hoverProps} className="nav-menu-item" ref={bookingsRef}>
                   <h5 onClick={toggleBookingsMenu}>BOOKINGS</h5>
                   {(showBookings || isHovering) && (

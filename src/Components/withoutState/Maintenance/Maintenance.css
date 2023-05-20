@@ -1,0 +1,13 @@
+#maintenance h1 {
+	font-size: 20px;
+	color: rgb(111, 111, 111);
+}
+
+#maintenance h2 {
+	font-size: 24px;
+}
+
+#maintenance p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
